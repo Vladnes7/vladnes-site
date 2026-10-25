@@ -61,6 +61,24 @@
   filter: invert(1);
 }
 
+/* На главной в светлой теме первый экран тёмный (home.css). Пока шапка лежит прямо на нём, у неё тёмные цвета;
+   после прокрутки (is-compact) или при открытом меню она берёт цвета темы. */
+[data-theme="light"] body:has(.hero#top) .header:not(.is-compact):not(.is-open) {
+  --text: #fff;
+  --text-2: #d8d8d8;
+  --muted: #b8c4d4;
+  --line: rgba(255, 255, 255, 0.14);
+  --line-strong: rgba(255, 255, 255, 0.28);
+  --surface: #141414;
+  --solid: #fff;
+  --on-solid: #000;
+  color: #fff;
+}
+
+[data-theme="light"] body:has(.hero#top) .header:not(.is-compact):not(.is-open) .logo__word {
+  filter: invert(1);
+}
+
 .header__nav {
   display: flex;
   gap: 4px;

@@ -2,10 +2,12 @@ import Approach from "@/components/Approach";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import HeroShader from "@/components/HeroShader";
 import Fields from "@/components/Fields";
 import LeadForm from "@/components/LeadForm";
 import LogoCloud from "@/components/LogoCloud";
 import ServiceIcon from "@/components/ServiceIcon";
+import SonicWave from "@/components/SonicWave";
 import Swap from "@/components/Swap";
 import WorkCard from "@/components/WorkCard";
 import { contacts, directions, hero, plans, posterRows, services, steps, works } from "@/lib/site";
@@ -19,16 +21,12 @@ export default function Page() {
       <Header />
       <main id="main">
         <section className="hero" id="top">
-          <div className="glow" aria-hidden="true">
-            <i />
-            <i />
-            <i />
-          </div>
+          <HeroShader />
           <div className="wrap hero__copy">
             <p className="badge" data-reveal data-reveal-self data-hero data-delay="0">
               {hero.badge}
             </p>
-            <h1 data-split data-hero>
+            <h1 data-split data-hero data-gradient>
               Сайты <em>и автоматизация</em>
               <br />
               для вашего <em>бизнеса</em>
@@ -330,6 +328,7 @@ export default function Page() {
             <i />
             <i />
           </div>
+          <SonicWave />
           <div className="wrap lead-sec__grid">
             <div className="lead-sec__copy">
               <h2 data-split>

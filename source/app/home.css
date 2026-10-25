@@ -89,6 +89,111 @@
   opacity: 0.25;
 }
 
+/* Первый экран всегда тёмный, даже в светлой теме: дым и лучи рассчитаны на чёрный фон. Остальной сайт переключается как обычно. */
+[data-theme="light"] .hero {
+  --bg: #000;
+  --text: #fff;
+  --text-2: #d8d8d8;
+  --muted: #9a9a9a;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-strong: rgba(255, 255, 255, 0.2);
+  --surface: #141414;
+  --solid: #fff;
+  --on-solid: #000;
+  --accent: #0099ff;
+  --accent-light: #7acaff;
+  color: #fff;
+  color-scheme: dark;
+}
+
+/* Фон-шейдер (components/HeroShader.jsx). Поверх него виньетка по краям и уход в чёрный внизу. */
+.shader {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  background: #02060f;
+  pointer-events: none;
+}
+
+.shader canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.shader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(transparent 62%, #000),
+    radial-gradient(ellipse at 50% 42%, transparent 40%, rgba(0, 4, 12, 0.55));
+}
+
+/* Заголовок крупнее и со свечением, чтобы не терялся на дыму. */
+.hero h1 {
+  filter: drop-shadow(0 4px 28px rgba(0, 110, 255, 0.35));
+}
+
+/* Значок над заголовком: стекло с голубой рамкой. */
+.hero .badge {
+  min-height: 42px;
+  padding: 0 var(--s-24);
+  border-color: rgba(120, 200, 255, 0.32);
+  background: rgba(0, 120, 255, 0.12);
+  color: #d9eeff;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Яркие кнопки первого экрана: главная светится сине-голубым градиентом, вторая — прозрачное стекло. */
+.hero .btn {
+  min-height: 56px;
+  padding: 0 32px;
+  font-size: 17px;
+  transition:
+    transform 0.3s var(--ease),
+    filter 0.3s var(--ease),
+    box-shadow 0.4s var(--ease),
+    background-color 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.hero .btn--solid {
+  border-color: transparent;
+  background: linear-gradient(100deg, #0a8bff 0%, #1fb6ff 55%, #38e4e0 100%);
+  color: #00101f;
+  box-shadow: 0 10px 36px -10px rgba(0, 153, 255, 0.7);
+}
+
+.hero .btn--solid:hover {
+  border-color: transparent;
+  background: linear-gradient(100deg, #0a8bff 0%, #1fb6ff 55%, #38e4e0 100%);
+  color: #00101f;
+  filter: brightness(1.1) saturate(1.1);
+  box-shadow: 0 14px 48px -8px rgba(0, 190, 255, 0.85);
+  transform: scale(1.05);
+}
+
+.hero .btn:not(.btn--solid) {
+  border-color: rgba(120, 200, 255, 0.32);
+  background: rgba(0, 120, 255, 0.1);
+  color: #e6f4ff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero .btn:not(.btn--solid):hover {
+  border-color: rgba(140, 215, 255, 0.6);
+  background: rgba(0, 140, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.hero .btn:active {
+  transform: scale(0.98);
+}
+
 .hero__copy {
   position: relative;
   display: grid;
@@ -105,7 +210,7 @@
   inset: -12% 6%;
   z-index: -1;
   background: radial-gradient(closest-side, var(--bg) 30%, transparent);
-  opacity: 0.8;
+  opacity: 0.45;
 }
 
 .hero__sub {
@@ -1511,6 +1616,26 @@
   background:
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
     linear-gradient(var(--bg), transparent 30%, transparent 70%, var(--bg));
+}
+
+/* Волна (components/SonicWave.jsx) лежит над свечением и под формой. По краям гаснет, чтобы не резать границы блока. */
+.wave {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent),
+    linear-gradient(transparent, #000 18%, #000 82%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent),
+    linear-gradient(transparent, #000 18%, #000 82%, transparent);
+  mask-composite: intersect;
+}
+
+.wave canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .lead-sec__grid {

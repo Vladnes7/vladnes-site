@@ -5,7 +5,29 @@ import { useEffect } from "react";
 // Одна точка входа для анимаций прокрутки. Разметка управляет ими через data-атрибуты:
 // data-split — заголовок по буквам, data-reveal — каскад дочерних элементов,
 // data-px="120" — горизонтальный сдвиг вместе с прокруткой, data-count — число набегает от нуля,
-// data-progress — линия заполняется по прокрутке, data-rise — элемент поднимается снизу.
+// data-progress — линия заполняется по прокрутке, data-rise — элемент поднимается снизу,
+// data-gradient (вместе с data-split) — буквы заголовка плавно меняют цвет от белого к синему.
+const GRADIENT = [
+  [255, 255, 255],
+  [168, 216, 255],
+  [31, 155, 255],
+];
+
+// Градиент у каждой буквы свой: у букв есть transform от анимации, и background-clip: text у родителя на них не работает.
+function paintGradient(el, chars) {
+  const box = el.getBoundingClientRect();
+  chars.forEach((char) => {
+    const r = char.getBoundingClientRect();
+    const x = (r.left + r.width / 2 - box.left) / box.width;
+    const y = (r.top + r.height / 2 - box.top) / box.height;
+    const f = Math.min(1, Math.max(0, (0.65 * x + 0.35 * y - 0.1) / 0.78)) * (GRADIENT.length - 1);
+    const i = Math.min(GRADIENT.length - 2, Math.floor(f));
+    const [a, b] = [GRADIENT[i], GRADIENT[i + 1]];
+    const t = f - i;
+    char.style.color = `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * t)).join(",")})`;
+  });
+}
+
 export default function Motion() {
   useEffect(() => {
     const root = document.documentElement;
@@ -29,6 +51,7 @@ export default function Motion() {
         gsap.utils.toArray("[data-split]").forEach((el) => {
           const split = new SplitText(el, { type: "words,chars", aria: "auto" });
           gsap.set(el, { opacity: 1 });
+          if (el.hasAttribute("data-gradient")) paintGradient(el, split.chars);
           const hero = el.hasAttribute("data-hero");
           gsap.from(split.chars, {
             opacity: 0,

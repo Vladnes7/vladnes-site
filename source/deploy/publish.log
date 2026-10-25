@@ -1,0 +1,33 @@
+== 2026-10-25 14:17:57 выкладка на sites
+ключи бота записаны
+сайт: 603baf5 Archipila на поддомене archipila.vladnes.ru вместо порта 8081
+node: v22.22.1
+служба заявок: active
+nginx: конфиг принят
+DNS ok: vladnes.ru
+DNS ok: www.vladnes.ru
+DNS ok: archipila.vladnes.ru
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Requesting a certificate for vladnes.ru and 2 more domains
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/vladnes/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/vladnes/privkey.pem
+This certificate expires on 2027-01-23.
+These files will be updated when the certificate renews.
+Certbot has set up a scheduled task to automatically renew this certificate in the background.
+
+Deploying certificate
+Successfully deployed certificate for vladnes.ru to /etc/nginx/sites-enabled/vladnes
+Successfully deployed certificate for www.vladnes.ru to /etc/nginx/sites-enabled/vladnes
+Successfully deployed certificate for archipila.vladnes.ru to /etc/nginx/sites-enabled/vladnes
+Congratulations! You have successfully enabled HTTPS on https://vladnes.ru, https://www.vladnes.ru, and https://archipila.vladnes.ru
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+сертификат: готово
+проверка vladnes.ru на сервере: 301
+== готово
