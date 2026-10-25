@@ -292,6 +292,12 @@ html.js-motion:not(.motion-ready) [data-reveal] {
   transform: scale(0.97);
 }
 
+/* Кнопка, лежащая прямо в блоке с data-reveal, появляется анимацией GSAP по transform. Переход transform у .btn спорил с ней
+   и оставлял кнопку на 26 px ниже места: на телефоне она вылезала за рамку карточки. Здесь transform не плавим. */
+[data-reveal] > .btn {
+  transition-property: background-color, border-color, color, box-shadow;
+}
+
 .btn--solid {
   background: var(--solid);
   border-color: var(--solid);
