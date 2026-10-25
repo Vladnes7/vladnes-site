@@ -17,7 +17,7 @@ const sources = {
     from: join(projects, "Сайты для клиентов/DavidDive/site"),
     only: ["index.html", "script.js", "styles.css", "motion.css", "motion.js", "img", "video"],
   },
-  archipila: { from: join(chatgpt, "archipila-website/out") },
+  archipila: { from: join(github, "archipila") },
   zharko: { from: join(github, "zharko") },
   "mokry-nos": { from: join(github, "mokry-nos") },
   avelia: { from: join(github, "avelia") },
