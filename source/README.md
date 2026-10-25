@@ -21,6 +21,6 @@
 
 `npm run demos` собирает в `demos/` три сайта: MAREA и Diving David (открываются в `/demo/...`)
 и Archipila. Archipila собрана с путями от корня сайта, поэтому на сервере она работает
-на отдельном порту 8081, а её адрес задаётся переменной `NEXT_PUBLIC_ARCHIPILA_URL` при сборке.
+на своём поддомене archipila.vladnes.ru, а её адрес задаётся переменной `NEXT_PUBLIC_ARCHIPILA_URL` при сборке.
 
 Скриншоты работ лежат в `public/works/`.

@@ -4,7 +4,7 @@
 set -eu
 
 SERVER="${SERVER:-root@37.77.106.12}"
-ARCHIPILA_URL="${ARCHIPILA_URL:-http://37.77.106.12:8081/}"
+ARCHIPILA_URL="${ARCHIPILA_URL:-https://archipila.vladnes.ru/}"
 
 NEXT_PUBLIC_ARCHIPILA_URL="$ARCHIPILA_URL" npm run build
 npm run demos
