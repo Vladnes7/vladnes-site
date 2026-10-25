@@ -1,0 +1,30 @@
+1:"$Sreact.fragment"
+3:"/demo/elan/_next/static/chunks/27gjg8e11zukd.js"
+4:"/demo/elan/_next/static/chunks/067g150ocd1oe.js"
+5:"/demo/elan/_next/static/chunks/0l0zl5uj1q-qc.js"
+6:I[36621,["$3","$4","$5"],"default"]
+7:I[39756,["$3","$4","$5"],"default"]
+8:I[37457,["$3","$4","$5"],"default"]
+9:I[22016,["$3","$4","$5"],""]
+d:I[97367,["$3","$4","$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$3","$4","$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$3","$4","$5"],"$13"]
+16:I[68027,["$3","$4","$5"],"default",1]
+:HL["/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","style"]
+:HL["/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","style"]
+:HL["/demo/elan/fonts/index.css","style"]
+:HL["/demo/elan/fonts/prata.css","style"]
+:HL["/demo/elan/fonts/prata-regular.ttf","font",{"crossOrigin":"anonymous","type":"font/ttf"}]
+2:["$","style",null,{"children":".js [data-lines],.js [data-rise],.js [data-mask]{opacity:1!important;transform:none!important}.js [data-rule]{transform:none!important}"}]
+b:X
+c:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[["$","section",null,{"className":"zF3XJG_notFound","children":[["$","span",null,{"className":"zF3XJG_eyebrow","children":"404"}],["$","h1",null,{"children":"Страница не найдена"}],["$","p",null,{"children":"Адрес не существует или был изменён."}],["$","$L9",null,{"href":"/","className":"zF3XJG_textLink","children":"На главную"}]]}],null,["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":"/_not-found","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$b"},"c":"$Qc"}]]
+0:{"P":null,"c":["","_not-found",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/demo/elan/_next/static/chunks/27gjg8e11zukd.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/demo/elan/_next/static/chunks/067g150ocd1oe.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/demo/elan/_next/static/chunks/0l0zl5uj1q-qc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ru","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"/demo/elan/fonts/index.css"}],[["$","link",null,{"rel":"stylesheet","href":"/demo/elan/fonts/prata.css"}],["$","link",null,{"rel":"preload","href":"/demo/elan/fonts/prata-regular.ttf","as":"font","type":"font/ttf","crossOrigin":"anonymous"}]],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"document.documentElement.classList.add('js')"}}],["$","noscript",null,{"children":"$2"}]]}],["$","body",null,{"children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"className":"zF3XJG_notFound","children":[["$","span",null,{"className":"zF3XJG_eyebrow","children":"404"}],["$","h1",null,{"children":"Страница не найдена"}],["$","p",null,{"children":"Адрес не существует или был изменён."}],["$","$L9",null,{"href":"/","className":"zF3XJG_textLink","children":"На главную"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],"p":false,"v":null},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"uRbYMDY0JS5A25g8x3-Yb"}
+b:C
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#f5f1e7"}]]
+17:I[27201,["$3","$4","$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"ÉLAN Villas — места, в которых хочется остаться"}],["$","meta","1",{"name":"description","content":"Вымышленная коллекция частных вилл на Сен-Бартелеми и Ибице. Архитектура, свет и жизнь в собственном ритме."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/demo/elan/icon.svg?icon.0y0qd949atp8t.svg","sizes":"any","type":"image/svg+xml"}],["$","$L17","4",{}]]

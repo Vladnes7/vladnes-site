@@ -1,0 +1,32 @@
+/* Rounded controls and a consistent luminous response. */
+.btn,.plain-btn{border-radius:999px}
+.btn{gap:16px;padding-inline:26px;overflow:visible;transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease,transform 160ms var(--ease-out)}
+.btn>span{position:relative;z-index:1}
+.btn:before{inset:0;border-radius:inherit;clip-path:inset(0 round 999px);background:linear-gradient(110deg,#e6ffad55,#ffffffb3 55%,#e6ffad33);transform:scaleX(.15);transform-origin:left center;opacity:0;z-index:-1;transition:transform 280ms var(--ease-out),opacity 200ms ease}
+.btn:after{border-radius:inherit;box-shadow:0 10px 30px #b5f56e80,0 2px 8px #c8ff8640;opacity:0;transition:opacity 200ms ease}
+.btn-arrow{border-radius:50%;width:27px;height:27px;flex:none;display:inline-grid;place-items:center;background:#ffffff15;transition:transform 220ms var(--ease-out),background-color 180ms ease}
+.btn:active{transform:scale(.97)}
+.btn:focus-visible:before{opacity:.45;transform:scaleX(1)}
+.btn:focus-visible:after{opacity:1}
+.btn:focus-visible .btn-arrow{background:#063d2c13}
+.menu-toggle{border-radius:50%}
+.seg,.menu-tabs button,.category-tabs>button,.preview-days button,.booking-days button,.time-slot,.day-checks label span{border-radius:16px}
+.hole-tabs button{border-radius:50%}
+.finder,.form-shell{border-radius:18px}
+.finder .btn{border-radius:999px}
+.experience-rail .photo{border-radius:12px 12px 0 0}
+.scroll-progress{display:none;position:fixed;left:0;right:0;top:0;height:3px;z-index:150;pointer-events:none;background:#ffffff0a;contain:layout style}
+.js .scroll-progress{display:block}
+.scroll-progress-fill{position:absolute;inset:0;display:block;background:#c9f675;transform:scaleX(0);transform-origin:left center;box-shadow:0 3px 9px #9ae34d55}
+.scroll-progress-ball{position:absolute;left:0;top:-2px;width:7px;height:7px;border-radius:50%;background:#f5ffe8;border:1px solid #8fcb57;box-shadow:0 2px 8px #b6ed7466;will-change:transform}
+.photo img{transform-origin:center;backface-visibility:hidden}
+@media(hover:hover) and (pointer:fine){
+ .btn:hover:before{transform:scaleX(1);opacity:.55}
+ .btn:hover:after{opacity:1}
+ .btn:hover .btn-arrow{background:#063d2c13;transform:translate(2px,-2px) rotate(45deg)}
+ .plain-btn:hover{box-shadow:0 7px 20px #a8df6540;transform:translateY(-1px)}
+ .menu-toggle:hover{background:var(--fresh)}
+ body[data-page='/'] .menu-toggle:hover i{background:var(--deep)}
+}
+@media(max-width:600px){.btn{padding-inline:22px;gap:12px}.btn-arrow{width:25px;height:25px}.finder{border-radius:16px}.finder .btn{min-height:49px}.scroll-progress{height:2px}.scroll-progress-ball{width:6px;height:6px;top:-2px}}
+@media(prefers-reduced-motion:reduce){.btn:before{transform:none;transition:opacity 120ms ease}.btn:hover .btn-arrow,.plain-btn:hover{transform:none!important}.photo img{transform:none!important}.scroll-progress-ball{will-change:auto}}

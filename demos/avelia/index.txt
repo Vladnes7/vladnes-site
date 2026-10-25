@@ -1,0 +1,27 @@
+1:"$Sreact.fragment"
+2:"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js"
+3:"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js"
+4:"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js"
+5:I[79520,["$2","$3","$4"],""]
+6:I[4121,["$2","$3","$4"],"Shell"]
+7:I[39756,["$2","$3","$4"],"default"]
+8:I[37457,["$2","$3","$4"],"default"]
+9:I[38286,["$2","$3","$4"],"Button"]
+b:"/demo/avelia/_next/static/chunks/3pwdzw5rdsuif.js"
+c:I[48118,["$2","$3","$4","$b"],"default"]
+d:I[97367,["$2","$3","$4"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$2","$3","$4"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$2","$3","$4"],"$13"]
+16:I[68027,["$2","$3","$4"],"default",1]
+:HL["/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","style"]
+:HL["/demo/avelia/_next/static/media/Manrope-s.p.3rjk17h6oms_8.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/demo/avelia/_next/static/media/Onest-s.p.0bvr_lyh6x35u.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+a:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[["$","$Lc",null,{}],[["$","script","script-0",{"src":"/demo/avelia/_next/static/chunks/3pwdzw5rdsuif.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ru","data-scroll-behavior":"smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","$L5",null,{"id":"avelia-theme-init","strategy":"beforeInteractive","dangerouslySetInnerHTML":{"__html":"try{document.documentElement.dataset.theme=localStorage.getItem('avelia-theme')||'light'}catch(e){}"}}]}],["$","body",null,{"className":"l506uG_variable xvXtTW_variable","children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":[],"templateScripts":null,"notFound":[["$","section",null,{"className":"not-found","children":[["$","h1",null,{"children":["Этой страницы",["$","br",null,{}],"пока нет."]}],["$","p",null,{"children":"Вернёмся туда, где начинается знакомство."}],["$","$L9",null,{"href":"/","children":"На главную"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],"p":false,"v":null},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"D0D_SBsTE0eNxeU36Lbe8"}
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+17:I[27201,["$2","$3","$4"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Avelia — современная стоматология в Москве"}],["$","meta","1",{"name":"description","content":"Вымышленная стоматологическая клиника в Москве. Диагностика, лечение, эстетика и запись на консультацию."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/demo/avelia/icon.svg?icon.2i3qep_bie84o.svg","sizes":"any","type":"image/svg+xml"}],["$","$L17","4",{}]]

@@ -1,0 +1,48 @@
+1:"$Sreact.fragment"
+2:"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js"
+3:"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js"
+4:"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js"
+5:I[79520,["$2","$3","$4"],""]
+6:I[4121,["$2","$3","$4"],"Shell"]
+7:I[39756,["$2","$3","$4"],"default"]
+8:I[37457,["$2","$3","$4"],"default"]
+9:"/demo/avelia/_next/static/chunks/40zgq8jol14cb.js"
+a:"/demo/avelia/_next/static/chunks/3pwdzw5rdsuif.js"
+b:I[38286,["$2","$3","$4","$9","$a"],"Button"]
+12:I[22016,["$2","$3","$4","$9","$a"],""]
+13:I[38286,["$2","$3","$4","$9","$a"],"Eyebrow"]
+14:I[38286,["$2","$3","$4","$9","$a"],"AnimatedText"]
+15:I[38286,["$2","$3","$4","$9","$a"],"Photo"]
+16:I[38286,["$2","$3","$4","$9","$a"],"Reveal"]
+17:I[38286,["$2","$3","$4","$9","$a"],"SectionTitle"]
+20:"ViewportBoundary"
+21:I[97367,["$2","$3","$4"],"$20"]
+22:"MetadataBoundary"
+23:I[97367,["$2","$3","$4"],"$22"]
+24:"$Sreact.suspense"
+25:I[27201,["$2","$3","$4"],"IconMark"]
+:HL["/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","style"]
+d:X
+10:X
+10:C
+11:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","section",null,{"className":"page-hero","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Хлебные крошки","children":[["$","$L12",null,{"href":"/","children":"Главная"}],["$","span",null,{"children":"/"}],"$undefined",["$","span",null,{"aria-current":"page","children":"Клиника"}]]}],["$","$L13",null,{"children":"Пространство АВЕЛИИ"}],["$","h1",null,{"children":["$","$L14",null,{"children":["Современная",["$","br",null,{}],"стоматология Avelia."]}]}],["$","p",null,{"children":"Четыре кабинета, восемь врачей и цифровая диагностика. Профилактика, лечение и восстановление зубов для взрослых и детей."}]]}],["$","div",null,{"className":"wide-photo","children":["$","$L15",null,{"id":"I02","alt":"Приёмная клиники в естественном дневном свете","priority":true,"sizes":"100vw"}]}],["$","section",null,{"className":"section two-column","children":[["$","h2",null,{"children":["$","$L14",null,{"children":["Всё для диагностики",["$","br",null,{}],"и лечения зубов."]}]}],["$","div",null,{"className":"body-copy","children":[["$","p",null,{"children":"На консультации врач изучит жалобы и снимки, проведёт осмотр и объяснит варианты лечения. Вы получите план с последовательностью этапов и стоимостью."}],["$","p",null,{"children":"В кабинетах установлены экраны для просмотра снимков и цифровых моделей. Обсудить результаты можно в отдельной зоне консультаций."}]]}]]}],["$","section",null,{"id":"clinic-values","className":"section clinic-values","children":[["$","$L16",null,{"children":[["$","h3",null,{"children":"Консультация"}],["$","p",null,{"children":"Перед осмотром обсуждаем жалобы, снимки и результаты предыдущего лечения. Оставляем время для ваших вопросов."}]]}],["$","$L16",null,{"children":[["$","h3",null,{"children":"План и стоимость"}],["$","p",null,{"children":"После диагностики составляем письменный план. В нём указаны этапы, материалы и стоимость каждого пункта."}]]}],["$","$L16",null,{"children":[["$","h3",null,{"children":"Удобство"}],["$","p",null,{"children":"Планируем график приёмов заранее. Можно обсудить длительность встречи, перерывы и подготовку к следующему визиту."}]]}]]}],["$","section",null,{"id":"clinic-gallery","className":"section clinic-gallery","children":[["$","$L17",null,{"label":"Внутри клиники","title":["Кабинеты, приёмная",["$","br",null,{}],"и зона консультаций."]}],["$","div",null,{"className":"gallery-grid","children":[["$","$L16",null,{"className":"gallery-large","children":["$","$L15",null,{"id":"I05","alt":"Консультационный кабинет"}]}],["$","$L16",null,{"className":"gallery-small","children":["$","$L15",null,{"id":"I03","alt":"Спокойная зона ожидания"}]}],["$","$L16",null,{"className":"gallery-wide","children":["$","$L15",null,{"id":"I07","alt":"Аккуратно организованная зона подготовки"}]}]]}]]}],["$","section",null,{"id":"clinic-tech","className":"section two-column details-section","children":[["$","div",null,{"className":"body-copy","children":[["$","$L13",null,{"children":"Цифровые технологии"}],["$","h2",null,{"children":["$","$L14",null,{"children":["Цифровые снимки",["$","br",null,{}],"и 3D-модели."]}]}],"$L18","$L19"]}],"$L1a"]}],"$L1b"],["$L1c","$L1d"],"$L1e"]}],"p":"$@1f","v":null,"s":"$d"}}]]
+e:[["children",{"s":{"n":"slug","t":"c","k":"clinic","s":[]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@f","v":"$10","s":"$d"},"c":"$Q11"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","precedence":"next"}],["$","script","script-0",{"src":"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js","async":true}],["$","script","script-1",{"src":"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js","async":true}],["$","script","script-2",{"src":"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js","async":true}]],["$","html",null,{"lang":"ru","data-scroll-behavior":"smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","$L5",null,{"id":"avelia-theme-init","strategy":"beforeInteractive","dangerouslySetInnerHTML":{"__html":"try{document.documentElement.dataset.theme=localStorage.getItem('avelia-theme')||'light'}catch(e){}"}}]}],["$","body",null,{"className":"l506uG_variable xvXtTW_variable","children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"templateStyles":[],"templateScripts":null,"notFound":[["$","section",null,{"className":"not-found","children":[["$","h1",null,{"children":["Этой страницы",["$","br",null,{}],"пока нет."]}],["$","p",null,{"children":"Вернёмся туда, где начинается знакомство."}],["$","$Lb",null,{"href":"/","children":"На главную"}]]}],[]]}]}]}]]}]]}],"p":"$@c","v":null,"s":"$d"},"c":"$Qe"},"h":{"r":["$","$1","h",{"children":[null,["$","$L21",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L23",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$24",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Клиника · АВЕЛИЯ"}],["$","meta","1",{"name":"description","content":"АВЕЛИЯ — вымышленная стоматологическая клиника в Москве."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/demo/avelia/icon.svg?icon.2i3qep_bie84o.svg","sizes":"any","type":"image/svg+xml"}],["$","$L25","4",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@26","v":null,"s":"$d"}},"a":"$@27","u":"$@28","b":"D0D_SBsTE0eNxeU36Lbe8"}
+29:I[38286,["$2","$3","$4","$9","$a"],"Arrow"]
+2a:I[97367,["$2","$3","$4"],"OutletBoundary"]
+18:["$","p",null,{"style":{"marginTop":30},"children":"Цифровые модели помогают рассмотреть форму и положение зубов. Врач покажет результаты на экране и объяснит, как они влияют на выбор лечения."}]
+19:["$","$Lb",null,{"href":"/services/diagnostics","children":"Познакомиться с диагностикой"}]
+1a:["$","$L15",null,{"id":"I06","alt":"Обсуждение изображения на экране"}]
+1b:["$","section",null,{"className":"section","children":["$","div",null,{"className":"doctor-consult","children":[["$","$L15",null,{"id":"I07","alt":"Зона подготовки инструментов в клинике"}],["$","div",null,{"children":[["$","$L13",null,{"children":"От деталей к плану"}],["$","h3",null,{"children":["Подготовка инструментов.",["$","br",null,{}],"Организация кабинета."]}],["$","p",null,{"children":"Зона подготовки отделена от кабинета. Инструменты организованы по этапам приёма, чтобы всё необходимое было у врача под рукой."}],["$","$L12",null,{"href":"/journal/digital-scan","className":"text-link","children":["О цифровой модели",["$","$L29",null,{}]]}]]}]]}]}]
+1c:["$","script","script-0",{"src":"/demo/avelia/_next/static/chunks/40zgq8jol14cb.js","async":true}]
+1d:["$","script","script-1",{"src":"/demo/avelia/_next/static/chunks/3pwdzw5rdsuif.js","async":true}]
+1e:["$","$L2a",null,{"children":["$","$24",null,{"name":"Next.MetadataOutlet","children":"$@2b"}]}]
+d:300
+2b:null
+28:true
+d:C
+27:0
+f:"$undefined"
+c:"$undefined"
+26:"$undefined"
+1f:"$undefined"

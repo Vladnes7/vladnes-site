@@ -1,0 +1,8 @@
+:HL["/_next/static/media/581b8a7a08caabc0-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/_next/static/media/5d7fa19dd58d4d1a-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/_next/static/css/27085baaa47e062d.css","style"]
+:HL["/_next/static/css/2eb8e44f799fcdcf.css","style"]
+:HL["/images/property-10-exterior.webp","image",{"imageSrcSet":"/images/property-10-exterior-640.webp 640w, /images/property-10-exterior-1200.webp 1200w, /images/property-10-exterior.webp 1800w","imageSizes":"100vw","fetchPriority":"high"}]
+:HL["/images/hero-cutout.webp","image",{"fetchPriority":"high"}]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"LZvGFEafrKjQVUpqk8Fx2","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

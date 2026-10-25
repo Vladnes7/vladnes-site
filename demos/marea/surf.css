@@ -1,0 +1,21 @@
+.surf-scene { background: var(--salt); }
+.surf-stage { position: relative; height: 100svh; min-height: 420px; overflow: clip; background: var(--salt); color: #fff; }
+.surf-still, .surf-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.surf-video { display: none; }
+.surf-shade { position: absolute; inset: 0; background: #102f31; opacity: .36; pointer-events: none; }
+.surf-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px 24px 48px; }
+.surf-copy h2 { font: clamp(64px,8.5vw,140px)/.96 var(--display); letter-spacing: -.035em; margin: 26px 0 40px; text-shadow: 0 2px 24px #123a3930; }
+.surf-copy h2 em { font-weight: inherit; }
+.surf-copy .menu-open-button { color: white; min-height: 56px; background: #163e3b80; }
+.surf-copy .menu-open-button:hover { background: var(--salt); color: var(--sea); }
+.surf-active { height: 265svh; }
+.surf-active .surf-stage { position: sticky; top: 0; }
+.surf-active .surf-still { visibility: hidden; }
+.surf-active .surf-video { display: block; }
+.surf-active .surf-copy { opacity: var(--surf-copy,0); visibility: hidden; }
+.surf-active .surf-copy.is-readable { visibility: visible; }
+.surf-active .surf-shade { opacity: var(--surf-tint,0); }
+/* Only the pale shoreline blends into the preceding ivory section. */
+.surf-active .surf-stage::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 10%; pointer-events: none; background: linear-gradient(var(--salt),transparent); opacity: var(--surf-seam,1); }
+@media (max-width: 600px) { .surf-copy h2 { font-size: clamp(56px,12vw,80px); } .surf-stage { min-height: 360px; } }
+@media (prefers-reduced-motion: reduce) { .surf-scene { height: auto; } .surf-stage { position: relative; } .surf-video { display: none; } .surf-still { visibility: visible; } }

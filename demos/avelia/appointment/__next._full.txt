@@ -1,0 +1,36 @@
+1:"$Sreact.fragment"
+2:"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js"
+3:"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js"
+4:"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js"
+5:I[79520,["$2","$3","$4"],""]
+6:I[4121,["$2","$3","$4"],"Shell"]
+7:I[39756,["$2","$3","$4"],"default"]
+8:I[37457,["$2","$3","$4"],"default"]
+9:"/demo/avelia/_next/static/chunks/40zgq8jol14cb.js"
+a:"/demo/avelia/_next/static/chunks/3pwdzw5rdsuif.js"
+b:I[38286,["$2","$3","$4","$9","$a"],"Button"]
+10:I[97367,["$2","$3","$4"],"OutletBoundary"]
+11:"$Sreact.suspense"
+13:"ViewportBoundary"
+14:I[97367,["$2","$3","$4"],"$13"]
+16:"MetadataBoundary"
+17:I[97367,["$2","$3","$4"],"$16"]
+19:I[68027,["$2","$3","$4"],"default",1]
+:HL["/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","style"]
+:HL["/demo/avelia/_next/static/media/Manrope-s.p.3rjk17h6oms_8.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/demo/avelia/_next/static/media/Onest-s.p.0bvr_lyh6x35u.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+d:X
+e:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lf",[["$","script","script-0",{"src":"/demo/avelia/_next/static/chunks/40zgq8jol14cb.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/demo/avelia/_next/static/chunks/3pwdzw5rdsuif.js","async":true,"nonce":"$undefined"}]],["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"p":false,"v":null}}]]
+c:[["children",{"s":{"n":"slug","t":"c","k":"appointment","s":[]},"h":66048,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$d"},"c":"$Qe"}]]
+0:{"P":null,"c":["","appointment",""],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ru","data-scroll-behavior":"smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","$L5",null,{"id":"avelia-theme-init","strategy":"beforeInteractive","dangerouslySetInnerHTML":{"__html":"try{document.documentElement.dataset.theme=localStorage.getItem('avelia-theme')||'light'}catch(e){}"}}]}],["$","body",null,{"className":"l506uG_variable xvXtTW_variable","children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":[],"templateScripts":null,"notFound":[["$","section",null,{"className":"not-found","children":[["$","h1",null,{"children":["Этой страницы",["$","br",null,{}],"пока нет."]}],["$","p",null,{"children":"Вернёмся туда, где начинается знакомство."}],["$","$Lb",null,{"href":"/","children":"На главную"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],"p":false,"v":null},"c":"$Qc"},"h":{"r":["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$11",null,{"name":"Next.Metadata","children":"$L18"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$19",[["$","link","0",{"rel":"stylesheet","href":"/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"D0D_SBsTE0eNxeU36Lbe8"}
+1a:I[22016,["$2","$3","$4","$9","$a"],""]
+1b:I[38286,["$2","$3","$4","$9","$a"],"Eyebrow"]
+1c:I[38286,["$2","$3","$4","$9","$a"],"AnimatedText"]
+1d:I[38286,["$2","$3","$4","$9","$a"],"Photo"]
+1e:I[19989,["$2","$3","$4","$9","$a"],"Calendar"]
+d:C
+f:[["$","section",null,{"className":"page-hero","children":[["$","nav",null,{"className":"breadcrumbs","aria-label":"Хлебные крошки","children":[["$","$L1a",null,{"href":"/","children":"Главная"}],["$","span",null,{"children":"/"}],"$undefined",["$","span",null,{"aria-current":"page","children":"Запись на приём"}]]}],["$","$L1b",null,{"children":"Запись на приём"}],["$","h1",null,{"children":["$","$L1c",null,{"children":["Выберите врача.",["$","br",null,{}],"Запишитесь на приём."]}]}],["$","p",null,{"children":"Выберите врача, дату и удобный час. Это демонстрационный календарь вымышленной клиники."}]]}],["$","section",null,{"className":"section appointment-grid","children":[["$","aside",null,{"className":"appointment-aside","children":[["$","$L1d",null,{"id":"P01","alt":"Спокойное знакомство с врачом"}],["$","h3",null,{"children":["Что взять",["$","br",null,{}],"на первый приём."]}],["$","p",null,{"children":"Возьмите имеющиеся снимки и заключения. Расскажите о том, что для вас важно. Мы оставим время для обсуждения и объясним следующий шаг."}],["$","p",null,{"className":"small-muted","children":["Москва · Europe/Moscow",["$","br",null,{}],"Контактные данные никуда не отправляются."]}]]}],["$","$L1e",null,{"form":true}]]}]]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[27201,["$2","$3","$4"],"IconMark"]
+12:null
+18:[["$","title","0",{"children":"Запись на приём · АВЕЛИЯ"}],["$","meta","1",{"name":"description","content":"АВЕЛИЯ — вымышленная стоматологическая клиника в Москве."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/demo/avelia/icon.svg?icon.2i3qep_bie84o.svg","sizes":"any","type":"image/svg+xml"}],["$","$L1f","4",{}]]

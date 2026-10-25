@@ -1,0 +1,36 @@
+1:"$Sreact.fragment"
+3:"/demo/elan/_next/static/chunks/27gjg8e11zukd.js"
+4:"/demo/elan/_next/static/chunks/067g150ocd1oe.js"
+5:"/demo/elan/_next/static/chunks/0l0zl5uj1q-qc.js"
+6:I[36621,["$3","$4","$5"],"default"]
+7:I[39756,["$3","$4","$5"],"default"]
+8:I[37457,["$3","$4","$5"],"default"]
+9:I[22016,["$3","$4","$5"],""]
+10:I[97367,["$3","$4","$5"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:"ViewportBoundary"
+15:I[97367,["$3","$4","$5"],"$14"]
+16:"MetadataBoundary"
+17:I[97367,["$3","$4","$5"],"$16"]
+18:I[27201,["$3","$4","$5"],"IconMark"]
+:HL["/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","style"]
+:HL["/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","style"]
+:HL["/demo/elan/fonts/index.css","style"]
+:HL["/demo/elan/fonts/prata.css","style"]
+:HL["/demo/elan/fonts/prata-regular.ttf","font",{"crossOrigin":"anonymous","type":"font/ttf"}]
+2:["$","style",null,{"children":".js [data-lines],.js [data-rise],.js [data-mask]{opacity:1!important;transform:none!important}.js [data-rule]{transform:none!important}"}]
+b:X
+e:X
+e:C
+f:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","section",null,{"className":"zF3XJG_notFound","children":[["$","span",null,{"className":"zF3XJG_eyebrow","children":"404"}],["$","h1",null,{"children":"Страница не найдена"}],["$","p",null,{"children":"Адрес не существует или был изменён."}],["$","$L9",null,{"href":"/","className":"zF3XJG_textLink","children":"На главную"}]]}],null,["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"p":"$@13","v":null,"s":"$b"}}]]
+c:[["children",{"s":"/_not-found","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@d","v":"$e","s":"$b"},"c":"$Qf"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","precedence":"next"}],["$","script","script-0",{"src":"/demo/elan/_next/static/chunks/27gjg8e11zukd.js","async":true}],["$","script","script-1",{"src":"/demo/elan/_next/static/chunks/067g150ocd1oe.js","async":true}],["$","script","script-2",{"src":"/demo/elan/_next/static/chunks/0l0zl5uj1q-qc.js","async":true}]],["$","html",null,{"lang":"ru","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"/demo/elan/fonts/index.css"}],[["$","link",null,{"rel":"stylesheet","href":"/demo/elan/fonts/prata.css"}],["$","link",null,{"rel":"preload","href":"/demo/elan/fonts/prata-regular.ttf","as":"font","type":"font/ttf","crossOrigin":"anonymous"}]],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"document.documentElement.classList.add('js')"}}],["$","noscript",null,{"children":"$2"}]]}],["$","body",null,{"children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","section",null,{"className":"zF3XJG_notFound","children":[["$","span",null,{"className":"zF3XJG_eyebrow","children":"404"}],["$","h1",null,{"children":"Страница не найдена"}],["$","p",null,{"children":"Адрес не существует или был изменён."}],["$","$L9",null,{"href":"/","className":"zF3XJG_textLink","children":"На главную"}]]}],[]]}]}]}]]}]]}],"p":"$@a","v":null,"s":"$b"},"c":"$Qc"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L15",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#f5f1e7"}]]}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$11",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"ÉLAN Villas — места, в которых хочется остаться"}],["$","meta","1",{"name":"description","content":"Вымышленная коллекция частных вилл на Сен-Бартелеми и Ибице. Архитектура, свет и жизнь в собственном ритме."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/demo/elan/icon.svg?icon.0y0qd949atp8t.svg","sizes":"any","type":"image/svg+xml"}],["$","$L18","4",{}]]}]}],null]}],null]}],"p":"$@19","v":null,"s":"$b"}},"a":"$@1a","u":"$@1b","b":"uRbYMDY0JS5A25g8x3-Yb"}
+12:null
+b:300
+1b:true
+b:C
+1a:0
+d:"$undefined"
+a:"$undefined"
+19:"$undefined"
+13:"$undefined"

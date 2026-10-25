@@ -1,0 +1,90 @@
+:root { --ease-drawer: cubic-bezier(.32,.72,0,1); }
+
+/* chapter-bootstrap.js owns navigation motion. */
+
+.nav-dialog { position: fixed; inset: 0; margin: 0; width: 100%; max-width: none; height: 100dvh; max-height: none; padding: 24px var(--gutter) 22px; border: 0; border-radius: 0; background: var(--sea); color: var(--salt); overflow-y: auto; overscroll-behavior: contain; }
+.nav-dialog[open] { display: flex; flex-direction: column; }
+.nav-dialog .dialog-top { position: sticky; z-index: 2; top: -24px; margin: 0; padding-block: 12px 20px; background: var(--sea); border-bottom: 1px solid #f5f3e928; }
+.nav-dialog .brand-small { color: var(--salt); }
+.nav-dialog .close-button { min-width: 48px; min-height: 48px; color: var(--salt); border: 1px solid #f5f3e952; border-radius: 50%; font: 300 32px/1 var(--body); transition: background 160ms ease, transform 220ms var(--ease-out); }
+.nav-layout { display: grid; grid-template-columns: 1.1fr .8fr; gap: clamp(40px,8vw,160px); align-items: center; flex: 1; padding-block: 28px; }
+.nav-dialog nav { display: flex; flex-direction: column; margin: 0; min-width: 0; }
+.nav-dialog nav .nav-link { position: relative; display: grid; grid-template-columns: 32px 1fr 28px; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px solid #f5f3e92b; font: 400 clamp(38px,4.7vw,68px)/1.03 var(--display); letter-spacing: -.025em; min-height: 52px; }
+.nav-link small { font: 10px/1 var(--body); letter-spacing: .08em; color: #cbd2bc; }
+.nav-link i { font: 26px/1 var(--display); opacity: .65; transition: transform 220ms var(--ease-out), opacity 160ms ease; }
+.nav-link>span { transition: transform 220ms var(--ease-out); }
+.nav-link[aria-current="page"]>span { font-style: italic; color: #d8dfc5; }
+.nav-aside { align-self: stretch; display: flex; flex-direction: column; justify-content: center; max-width: 420px; }
+.nav-aside figure { margin: 0; }
+.nav-aside img { display: block; width: 100%; height: auto; aspect-ratio: 5/4; object-fit: cover; }
+.nav-aside figcaption { font: 8px/1.6 var(--body); letter-spacing: .16em; margin-top: 12px; color: #d8dfc5; }
+.nav-aside>p { font: 400 clamp(30px,3.5vw,49px)/1.03 var(--display); letter-spacing: -.02em; margin: 28px 0 0; }
+.nav-aside>p em { color: #cbd2bc; }
+.nav-baseline { display: flex; justify-content: space-between; gap: 24px; padding-top: 18px; border-top: 1px solid #f5f3e928; font: 8px/1.8 var(--body); letter-spacing: .14em; }
+.nav-link:focus-visible { outline: 2px solid var(--salt); outline-offset: 4px; }
+@media (hover:hover) and (pointer:fine) {
+  .nav-link:hover>span { transform: translateX(8px); }
+  .nav-link:hover i { transform: translate(3px,-3px); opacity: 1; }
+  .nav-dialog .close-button:hover { background: #f5f3e91a; transform: rotate(90deg); }
+}
+
+/* The tide uncovers an invitation, not a directory. Its height stays natural. */
+.contact-details { background: var(--salt); gap: 26px; }
+.contact-compose { display: grid; grid-template-columns: 1.35fr .65fr; align-items: center; gap: clamp(30px,7vw,100px); padding-block: 12px 8px; }
+.contact-invitation { min-width: 0; }
+.contact-script { display: block; color: #657258; font: italic clamp(26px,3vw,40px)/1 var(--display); letter-spacing: -.03em; }
+.contact-details h2 { font-size: clamp(76px,9.4vw,148px); margin: 20px 0 26px; line-height: .85; }
+.contact-details h2 em { font-weight: 400; color: #657258; }
+.contact-invitation>p { font: 14px/1.7 var(--body); margin: 0 0 24px; }
+.contact-invitation .menu-open-button { background: var(--sea); color: var(--salt); border-color: var(--sea); padding: 18px 26px; width: min(100%,330px); justify-content: space-between; }
+.contact-demo { display: block; font: 10px/1.6 var(--body); margin-top: 12px; color: #56634f; max-width: 330px; }
+.contact-postcard { position: relative; width: 100%; max-width: 310px; justify-self: end; margin: 0; padding: 12px 12px 16px; background: #e9e7db; transform: rotate(2deg); }
+.contact-postcard img { display: block; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; }
+.contact-postcard figcaption { padding-top: 14px; font: 8px/1.5 var(--body); letter-spacing: .14em; }
+.contact-postcard figcaption span { display: block; margin-top: 6px; font: italic 27px/1 var(--display); letter-spacing: -.02em; }
+.contact-bottom { display: block; }
+.contact-list { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px; }
+.contact-list>div { padding-top: 15px; }
+.contact-list dt { display: flex; gap: 12px; font-size: 10px; }
+.contact-list dt>span { color: #6b765f; letter-spacing: 0; }
+.contact-list dd { font-size: 12px; }
+.contact-list dd a { display: flex; justify-content: space-between; gap: 10px; max-width: 260px; padding-block: 3px; min-height: 28px; }
+.contact-list dd a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.contact-baseline { margin-top: 0; }
+.tide-animated .contact-details { padding-top: clamp(96px,12svh,126px); padding-bottom: 28px; }
+@media (max-width:900px) {
+  .nav-layout { display: block; padding-block: 24px; }
+  .nav-aside { display: none; }
+  .nav-dialog nav .nav-link { font-size: clamp(34px,7vw,54px); padding-block: 12px; }
+  .contact-compose { grid-template-columns: 1.3fr .7fr; gap: 30px; }
+  .contact-list { gap: 24px; }
+}
+@media (max-width:600px) {
+  .nav-dialog { padding: 12px 24px 20px; }
+  .nav-dialog .dialog-top { top: -12px; padding-block: 8px 16px; }
+  .nav-dialog nav .nav-link { grid-template-columns: 24px 1fr 24px; font-size: 39px; padding-block: 13px; }
+  .nav-baseline { flex-direction: column; gap: 2px; font-size: 7px; }
+  .contact-top .eyebrow { font-size: 8px; letter-spacing: .08em; }
+  .contact-top svg { width: 32px; height: 32px; flex-shrink: 0; }
+  .contact-compose { grid-template-columns: 1fr; gap: 34px; }
+  .contact-details h2 { font-size: clamp(68px,18vw,105px); margin: 18px 0 24px; }
+  .contact-invitation>p { font-size: 13px; }
+  .contact-postcard { max-width: 220px; justify-self: end; padding: 9px 9px 12px; }
+  .contact-postcard img { aspect-ratio: 5/4; object-position: center 68%; }
+  .contact-postcard figcaption span { font-size: 24px; }
+  .contact-list { grid-template-columns: 1fr; gap: 22px; }
+  .contact-list dd { font-size: 13px; }
+  .contact-list dd a { min-height: 44px; align-items: center; max-width: none; }
+  .contact-baseline { line-height: 1.8; font-size: 8px; }
+  .contact-baseline>span { display: block; }
+}
+@media (max-height:500px) and (min-width:601px) {
+  .nav-layout { align-items: start; }
+  .nav-aside { display: none; }
+  .nav-dialog nav .nav-link { font-size: 34px; }
+  .nav-dialog .dialog-top { padding-bottom: 12px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .page-enter, ::view-transition-old(*), ::view-transition-new(*), ::view-transition-group(*) { animation: none !important; }
+  .nav-link>span,.nav-link i,.nav-dialog .close-button { transition: none; }
+}

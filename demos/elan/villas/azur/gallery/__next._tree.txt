@@ -1,0 +1,8 @@
+:HL["/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","style"]
+:HL["/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","style"]
+:HL["/demo/elan/fonts/index.css","style"]
+:HL["/demo/elan/fonts/prata.css","style"]
+:HL["/demo/elan/fonts/prata-regular.ttf","font",{"crossOrigin":"anonymous","type":"font/ttf"}]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":{"n":"slug","t":"c","k":"villas/azur/gallery","s":[]},"h":65632,"c":"$Q2"}]]
+0:{"b":"uRbYMDY0JS5A25g8x3-Yb","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

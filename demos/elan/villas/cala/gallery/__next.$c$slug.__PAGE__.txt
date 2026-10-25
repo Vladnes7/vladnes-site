@@ -1,0 +1,44 @@
+1:"$Sreact.fragment"
+3:"/demo/elan/_next/static/chunks/27gjg8e11zukd.js"
+4:"/demo/elan/_next/static/chunks/067g150ocd1oe.js"
+5:"/demo/elan/_next/static/chunks/0l0zl5uj1q-qc.js"
+6:I[36621,["$3","$4","$5"],"default"]
+7:I[39756,["$3","$4","$5"],"default"]
+8:I[37457,["$3","$4","$5"],"default"]
+9:"/demo/elan/_next/static/chunks/21cb3dx-myg1d.js"
+a:I[22016,["$3","$4","$5","$9"],""]
+11:I[13597,["$3","$4","$5","$9"],"default"]
+18:"ViewportBoundary"
+19:I[97367,["$3","$4","$5"],"$18"]
+1a:"MetadataBoundary"
+1b:I[97367,["$3","$4","$5"],"$1a"]
+1c:"$Sreact.suspense"
+1d:I[27201,["$3","$4","$5"],"IconMark"]
+:HL["/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","style"]
+:HL["/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","style"]
+:HL["/demo/elan/fonts/index.css","style"]
+:HL["/demo/elan/fonts/prata.css","style"]
+:HL["/demo/elan/fonts/prata-regular.ttf","font",{"crossOrigin":"anonymous","type":"font/ttf"}]
+2:["$","style",null,{"children":".js [data-lines],.js [data-rise],.js [data-mask]{opacity:1!important;transform:none!important}.js [data-rule]{transform:none!important}"}]
+c:X
+f:X
+f:C
+10:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$L11",null,{"villa":{"id":"cala","name":"Cala","destination":"ibiza","guests":14,"bedrooms":7,"area":1300,"palette":"Травертин · дуб · скалистый берег","title":"Дом над скалистой бухтой","lead":"Скульптурный дом на скале: широкие консоли, травертин, высокие стеклянные проёмы.","architecture":"Горизонтальная крыша затеняет террасы, травертин повторяет цвет береговых скал.","interior":"Приглушённый дуб, графитовый лён, крупные спокойные формы.","location":"Над небольшой бухтой. Рельеф защищает дом от дороги.","rooms":[{"name":"Главная резиденция","area":110,"feature":"гостиная и терраса","description":"Высокие стеклянные проёмы и терраса над бухтой."},{"name":"Четыре морские спальни","area":58,"feature":"травертиновые ванные","description":"Открытый вид на море."},{"name":"Две гостевые спальни","area":50,"feature":"личная терраса","description":"Мягкий свет, дуб, отдельный выход на террасу."}],"images":[{"src":"/demo/elan/images/cala-hero.webp","alt":"Cala — вилла, открытые террасы и бассейн у моря","category":"Архитектура"},{"src":"/demo/elan/images/cala-architecture.webp","alt":"Cala — архитектура виллы среди островного пейзажа","category":"Архитектура"},{"src":"/demo/elan/images/cala-living.webp","alt":"Cala — гостиная с натуральными материалами и выходом на террасу","category":"Интерьеры"},{"src":"/demo/elan/images/cala-detail.webp","alt":"Cala — керамика, камень и льняные ткани в интерьере","category":"Интерьеры","portrait":true},{"src":"/demo/elan/images/cala-dining.webp","alt":"Cala — обеденная зона под открытой перголой","category":"Сады и террасы"},{"src":"/demo/elan/images/cala-master.webp","alt":"Cala — главная спальня с собственной террасой","category":"Спальни"},{"src":"/demo/elan/images/cala-suite.webp","alt":"Cala — уединённая гостевая спальня","category":"Спальни","portrait":true},{"src":"/demo/elan/images/cala-garden-bedroom.webp","alt":"Cala — гостевая спальня с видом в сад","category":"Спальни"},{"src":"/demo/elan/images/cala-bath.webp","alt":"Cala — светлая ванная комната с каменной ванной","category":"Интерьеры","portrait":true},{"src":"/demo/elan/images/cala-wellness.webp","alt":"Cala — терраса для йоги и пилатеса","category":"Wellness"},{"src":"/demo/elan/images/cala-pool.webp","alt":"Cala — панорамный бассейн и шезлонги","category":"Сады и террасы"},{"src":"/demo/elan/images/cala-garden.webp","alt":"Cala — садовая дорожка и тихое место для отдыха","category":"Сады и террасы","portrait":true},{"src":"/demo/elan/images/cala-evening.webp","alt":"Cala — вилла в вечернем свете","category":"Архитектура"}]}}],["$","section",null,{"className":"zF3XJG_enquire","data-dark":true,"children":["$L12","$L13","$L14"]}]],["$L15"],"$L16"]}],"p":"$@17","v":null,"s":"$c"}}]]
+d:[["children",{"s":{"n":"slug","t":"c","k":"villas/cala/gallery","s":[]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/2bnl0dfh6q93u.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/demo/elan/_next/static/chunks/3h5h6gby3te8g.css","precedence":"next"}],["$","script","script-0",{"src":"/demo/elan/_next/static/chunks/27gjg8e11zukd.js","async":true}],["$","script","script-1",{"src":"/demo/elan/_next/static/chunks/067g150ocd1oe.js","async":true}],["$","script","script-2",{"src":"/demo/elan/_next/static/chunks/0l0zl5uj1q-qc.js","async":true}]],["$","html",null,{"lang":"ru","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"/demo/elan/fonts/index.css"}],[["$","link",null,{"rel":"stylesheet","href":"/demo/elan/fonts/prata.css"}],["$","link",null,{"rel":"preload","href":"/demo/elan/fonts/prata-regular.ttf","as":"font","type":"font/ttf","crossOrigin":"anonymous"}]],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"document.documentElement.classList.add('js')"}}],["$","noscript",null,{"children":"$2"}]]}],["$","body",null,{"children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","section",null,{"className":"zF3XJG_notFound","children":[["$","span",null,{"className":"zF3XJG_eyebrow","children":"404"}],["$","h1",null,{"children":"Страница не найдена"}],["$","p",null,{"children":"Адрес не существует или был изменён."}],["$","$La",null,{"href":"/","className":"zF3XJG_textLink","children":"На главную"}]]}],[]]}]}]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L19",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#f5f1e7"}]]}],["$","$L1b",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Cala — Галерея | ÉLAN Villas"}],["$","meta","1",{"name":"description","content":"Вымышленная коллекция частных вилл на Сен-Бартелеми и Ибице. Архитектура, свет и жизнь в собственном ритме."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/demo/elan/icon.svg?icon.0y0qd949atp8t.svg","sizes":"any","type":"image/svg+xml"}],["$","$L1d","4",{}]]}]}],null]}],null]}],"p":"$@1e","v":null,"s":"$c"}},"a":"$@1f","u":"$@20","b":"uRbYMDY0JS5A25g8x3-Yb"}
+21:I[5500,["$3","$4","$5","$9"],"Image"]
+22:I[97367,["$3","$4","$5"],"OutletBoundary"]
+12:["$","div",null,{"className":"zF3XJG_enquireMedia","children":["$","$L21",null,{"src":"/demo/elan/images/cala-evening.webp","alt":"Cala в вечернем свете","fill":true,"sizes":"(max-aspect-ratio: 16/9) 200vh, 100vw","loading":"lazy","style":{"objectFit":"cover"}}]}]
+13:["$","div",null,{"className":"zF3XJG_enquireShade"}]
+14:["$","div",null,{"className":"zF3XJG_enquireInner","children":[["$","span",null,{"className":"zF3XJG_enquireCaption","data-rise":true,"children":"Запрос на отдых"}],["$","h2",null,{"data-lines":true,"children":"Выберите даты для Cala"}],["$","div",null,{"className":"zF3XJG_enquireBar","children":[["$","span",null,{"className":"zF3XJG_rule","data-rule":true}],["$","ul",null,{"className":"zF3XJG_enquireFacts","data-rise":true,"data-delay":".3","children":[["$","li",null,{"children":"Ибица"}],["$","li",null,{"children":"14 гостей"}],["$","li",null,{"children":"7 спален"}]]}],["$","a",null,{"href":"#enquire","className":"zF3XJG_enquireAction","data-rise":true,"data-delay":".4","children":"Выбрать желаемые даты"}],["$","span",null,{"className":"zF3XJG_rule","data-rule":true}]]}]]}]
+15:["$","script","script-0",{"src":"/demo/elan/_next/static/chunks/21cb3dx-myg1d.js","async":true}]
+16:["$","$L22",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@23"}]}]
+c:300
+23:null
+20:true
+c:C
+1f:0
+e:"$undefined"
+b:"$undefined"
+1e:"$undefined"
+17:"$undefined"

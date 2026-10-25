@@ -1,0 +1,23 @@
+# Служба приёма заявок. Положить в /etc/systemd/system/vladnes-lead.service
+# Ключи лежат отдельно, в /etc/vladnes/lead.env (права 600, владелец root):
+#   TELEGRAM_BOT_TOKEN=...
+#   TELEGRAM_CHAT_ID=...
+#   ALLOWED_ORIGINS=https://vladnes.ru,https://www.vladnes.ru
+# Включить: systemctl daemon-reload && systemctl enable --now vladnes-lead
+
+[Unit]
+Description=Vladnes: приём заявок с сайта
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/vladnes/lead.env
+ExecStart=/usr/bin/node /var/www/vladnes/server/lead.mjs
+Restart=on-failure
+User=www-data
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

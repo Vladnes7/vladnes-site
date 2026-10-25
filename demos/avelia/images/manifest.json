@@ -1,0 +1,482 @@
+{
+  "C01": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/C01.webp"
+  },
+  "C02": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/C02.webp"
+  },
+  "C03": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/C03.webp"
+  },
+  "C04": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/C04.webp"
+  },
+  "D01-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D01-A.webp"
+  },
+  "D01-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D01-B.webp"
+  },
+  "D02-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D02-A.webp"
+  },
+  "D02-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D02-B.webp"
+  },
+  "D03-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D03-A.webp"
+  },
+  "D03-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D03-B.webp"
+  },
+  "D04-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D04-A.webp"
+  },
+  "D04-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D04-B.webp"
+  },
+  "D05-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D05-A.webp"
+  },
+  "D05-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D05-B.webp"
+  },
+  "D06-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D06-A.webp"
+  },
+  "D06-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D06-B.webp"
+  },
+  "D07-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D07-A.webp"
+  },
+  "D07-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D07-B.webp"
+  },
+  "D08-A": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/D08-A.webp"
+  },
+  "D08-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/D08-B.webp"
+  },
+  "H01-background": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/H01-background.webp"
+  },
+  "H01-foreground": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/H01-foreground.webp"
+  },
+  "H01-subject": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/H01-subject.webp"
+  },
+  "H01": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/H01.webp"
+  },
+  "H02": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/H02.webp"
+  },
+  "H03": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/H03.webp"
+  },
+  "H04": {
+    "width": 941,
+    "height": 1672,
+    "src": "/demo/avelia/images/H04.webp"
+  },
+  "H05": {
+    "width": 941,
+    "height": 1672,
+    "src": "/demo/avelia/images/H05.webp"
+  },
+  "H06": {
+    "width": 941,
+    "height": 1672,
+    "src": "/demo/avelia/images/H06.webp"
+  },
+  "I01": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/I01.webp"
+  },
+  "I02": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/I02.webp"
+  },
+  "I03": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/I03.webp"
+  },
+  "I04": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/I04.webp"
+  },
+  "I05": {
+    "width": 1122,
+    "height": 1402,
+    "src": "/demo/avelia/images/I05.webp"
+  },
+  "I06": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/I06.webp"
+  },
+  "I07": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/I07.webp"
+  },
+  "I08": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/I08.webp"
+  },
+  "J01-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J01-A.webp"
+  },
+  "J01-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J01-B.webp"
+  },
+  "J02-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J02-A.webp"
+  },
+  "J02-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J02-B.webp"
+  },
+  "J03-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J03-A.webp"
+  },
+  "J03-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J03-B.webp"
+  },
+  "J04-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J04-A.webp"
+  },
+  "J04-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J04-B.webp"
+  },
+  "J05-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J05-A.webp"
+  },
+  "J05-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J05-B.webp"
+  },
+  "J06-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J06-A.webp"
+  },
+  "J06-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J06-B.webp"
+  },
+  "J07-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J07-A.webp"
+  },
+  "J07-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J07-B.webp"
+  },
+  "J08-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J08-A.webp"
+  },
+  "J08-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J08-B.webp"
+  },
+  "J09-A": {
+    "width": 1448,
+    "height": 1086,
+    "src": "/demo/avelia/images/J09-A.webp"
+  },
+  "J09-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/J09-B.webp"
+  },
+  "JAW": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/JAW.webp"
+  },
+  "P01": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/P01.webp"
+  },
+  "P02": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/P02.webp"
+  },
+  "R01": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R01.webp"
+  },
+  "R02": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R02.webp"
+  },
+  "R03": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R03.webp"
+  },
+  "R04": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R04.webp"
+  },
+  "R05": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R05.webp"
+  },
+  "R06": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R06.webp"
+  },
+  "R07": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R07.webp"
+  },
+  "R08": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/R08.webp"
+  },
+  "S01-A": {
+    "width": 1086,
+    "height": 1448,
+    "src": "/demo/avelia/images/S01-A.webp"
+  },
+  "S01-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S01-B.webp"
+  },
+  "S01-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S01-C.webp"
+  },
+  "S02-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S02-A.webp"
+  },
+  "S02-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S02-B.webp"
+  },
+  "S02-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S02-C.webp"
+  },
+  "S03-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S03-A.webp"
+  },
+  "S03-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S03-B.webp"
+  },
+  "S03-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S03-C.webp"
+  },
+  "S04-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S04-A.webp"
+  },
+  "S04-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S04-B.webp"
+  },
+  "S04-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S04-C.webp"
+  },
+  "S05-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S05-A.webp"
+  },
+  "S05-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S05-B.webp"
+  },
+  "S05-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S05-C.webp"
+  },
+  "S06-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S06-A.webp"
+  },
+  "S06-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S06-B.webp"
+  },
+  "S06-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S06-C.webp"
+  },
+  "S07-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S07-A.webp"
+  },
+  "S07-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S07-B.webp"
+  },
+  "S07-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S07-C.webp"
+  },
+  "S08-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S08-A.webp"
+  },
+  "S08-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S08-B.webp"
+  },
+  "S08-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S08-C.webp"
+  },
+  "S09-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S09-A.webp"
+  },
+  "S09-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S09-B.webp"
+  },
+  "S09-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S09-C.webp"
+  },
+  "S10-A": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S10-A.webp"
+  },
+  "S10-B": {
+    "width": 1536,
+    "height": 1024,
+    "src": "/demo/avelia/images/S10-B.webp"
+  },
+  "S10-C": {
+    "width": 1254,
+    "height": 1254,
+    "src": "/demo/avelia/images/S10-C.webp"
+  }
+}

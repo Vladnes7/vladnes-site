@@ -1,0 +1,504 @@
+/* ---------- Шапка ---------- */
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  padding: 0 var(--pad);
+  pointer-events: none;
+}
+
+.header__bar {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1280px;
+  height: 72px;
+  margin: 0 auto;
+  padding: 0 4px;
+  border: 1px solid transparent;
+  border-radius: var(--r-md);
+  transition:
+    max-width 0.52s var(--ease),
+    margin 0.52s var(--ease),
+    padding 0.52s var(--ease),
+    height 0.52s var(--ease),
+    background-color 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.header.is-compact .header__bar {
+  max-width: 1040px;
+  height: 64px;
+  margin-top: 12px;
+  padding: 0 14px 0 20px;
+  background: var(--nav-bg);
+  border-color: var(--line);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.logo {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+}
+
+.logo__mark {
+  width: 28px;
+  height: auto;
+}
+
+.logo__word {
+  width: 82px;
+  height: auto;
+}
+
+[data-theme="dark"] .logo__word {
+  filter: invert(1);
+}
+
+.header__nav {
+  display: flex;
+  gap: 4px;
+}
+
+.header__nav a {
+  padding: 10px 14px;
+  border-radius: var(--r-pill);
+  color: var(--muted);
+  font-size: var(--fs-16);
+  font-weight: 500;
+  transition: color 0.2s var(--ease);
+}
+
+.header__nav a:hover {
+  color: var(--text);
+}
+
+.header__side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__cta {
+  min-height: 42px;
+}
+
+.theme {
+  position: relative;
+  width: 52px;
+  height: 30px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+}
+
+.theme::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+}
+
+.theme__knob {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--text);
+  transition: transform 0.3s var(--ease);
+}
+
+[data-theme="light"] .theme__knob {
+  transform: translateX(22px);
+}
+
+/* Кнопка меню и само меню повторяют visuvate.com: две равные линии, которые за 0,38 с складываются в крест;
+   меню открывается шторкой сверху вниз (clip-path, 0,6 с), пункты поднимаются на 16 px с шагом 55 мс. */
+.burger {
+  display: none;
+  position: relative;
+  z-index: 2;
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  transition: border-color 0.3s var(--ease);
+}
+
+.burger:hover {
+  border-color: var(--text);
+}
+
+.burger span {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 1.5px;
+  background: var(--text);
+  transition:
+    rotate 0.38s var(--ease),
+    top 0.38s var(--ease);
+}
+
+.burger span:first-child {
+  top: 15px;
+}
+
+.burger span:last-child {
+  top: 23.5px;
+}
+
+.header.is-open .burger span:first-child,
+.header.is-open .burger span:last-child {
+  top: 19.25px;
+}
+
+.header.is-open .burger span:first-child {
+  rotate: 45deg;
+}
+
+.header.is-open .burger span:last-child {
+  rotate: -45deg;
+}
+
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 104px 24px 40px;
+  background: var(--bg);
+  clip-path: inset(0 0 100% 0);
+  visibility: hidden;
+  /* Шапка не ловит клики (pointer-events: none), поэтому меню возвращает их себе: иначе пункты не нажимаются. */
+  pointer-events: auto;
+  transition:
+    clip-path 0.6s var(--ease),
+    visibility 0s 0.6s;
+}
+
+.header.is-open .menu {
+  clip-path: inset(0);
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.menu nav {
+  display: grid;
+}
+
+.menu nav a {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  opacity: 0;
+  translate: 0 16px;
+  transition:
+    opacity 0.55s var(--ease),
+    translate 0.55s var(--ease),
+    border-color 0.55s var(--ease),
+    color 0.3s var(--ease);
+}
+
+.header.is-open .menu nav a {
+  opacity: 1;
+  translate: 0 0;
+  transition-delay: calc(180ms + var(--i) * 55ms), calc(180ms + var(--i) * 55ms), 0s, 0s;
+}
+
+.menu nav a:is(:hover, :focus-visible, .is-current) {
+  color: var(--text);
+}
+
+.menu nav a.is-current {
+  border-color: color-mix(in srgb, var(--text) 25%, transparent);
+}
+
+.menu__n {
+  width: 24px;
+  flex: none;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.menu nav a.is-current .menu__n {
+  color: var(--text);
+}
+
+.menu__w {
+  flex: 1;
+}
+
+.menu__t {
+  display: block;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: var(--tr-snug);
+  line-height: 1.15;
+  transition: translate 0.3s var(--ease);
+}
+
+.menu nav a:hover .menu__t {
+  translate: 4px 0;
+}
+
+.menu nav a i {
+  align-self: center;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: scale(0);
+}
+
+.menu nav a.is-current i {
+  transform: scale(1);
+}
+
+.menu__foot {
+  display: grid;
+  gap: 18px;
+  opacity: 0;
+  translate: 0 16px;
+  transition:
+    opacity 0.55s var(--ease),
+    translate 0.55s var(--ease);
+}
+
+.header.is-open .menu__foot {
+  opacity: 1;
+  translate: 0 0;
+  transition-delay: 0.55s;
+}
+
+.menu__cta {
+  width: 100%;
+  min-height: 56px;
+  font-size: var(--fs-18);
+}
+
+.menu__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  color: var(--muted);
+  font-size: var(--fs-16);
+}
+
+.menu__contacts a {
+  padding: 6px 0;
+}
+
+/* Меню нужно, пока навигация не помещается в шапку: до 980 px, как у visuvate.com. */
+@media (max-width: 980px) {
+  .header__nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header.is-open .header__bar {
+    background: none;
+    border-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__cta {
+    display: none;
+  }
+}
+
+/* Сетка 4×2: общие тонкие линии, кресты на пересечениях, как в logo-cloud-2 (21st.dev). */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  max-width: 1040px;
+  margin-inline: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--line);
+  overflow: hidden;
+}
+
+.logos__cell {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 112px;
+  padding: 28px 16px;
+  background: var(--bg);
+  color: var(--muted);
+  font-size: var(--fs-16);
+  font-weight: 600;
+  letter-spacing: var(--tr-snug);
+  text-align: left;
+  transition:
+    background-color 0.35s var(--ease),
+    color 0.35s var(--ease);
+}
+
+.logos__cell:is(:nth-child(1), :nth-child(3), :nth-child(6), :nth-child(8)) {
+  background: var(--raised);
+}
+
+/* Кресты на пересечениях линий сетки. */
+.logos__cell::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
+  z-index: 2;
+  display: none;
+  width: 13px;
+  height: 13px;
+  background:
+    linear-gradient(var(--muted), var(--muted)) center / 1px 100% no-repeat,
+    linear-gradient(var(--muted), var(--muted)) center / 100% 1px no-repeat,
+    var(--bg);
+}
+
+.logos__cell:nth-child(-n + 3)::after {
+  display: block;
+}
+
+.logos__icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+  transition: transform 0.5s var(--ease);
+}
+
+@media (hover: hover) {
+  .logos__cell:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  .logos__cell:hover .logos__icon {
+    transform: scale(1.12) rotate(-4deg);
+  }
+}
+
+/* ---------- Вопросы ---------- */
+.faqs__grid {
+  display: grid;
+  gap: clamp(32px, 5vw, 56px);
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.faqs h2 {
+  text-align: center;
+}
+
+.faq {
+  display: grid;
+  gap: 12px;
+}
+
+.faq__row {
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-lg);
+  transition:
+    border-color 0.3s var(--ease),
+    background-color 0.3s var(--ease);
+}
+
+.faq__row:hover,
+.faq__row.is-open {
+  border-color: color-mix(in srgb, var(--text) 40%, transparent);
+}
+
+.faq__row.is-open {
+  background: var(--raised);
+}
+
+.faq__row button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  min-height: 68px;
+  padding: 18px 24px;
+  border-radius: var(--r-lg);
+  font-size: var(--fs-18);
+  font-weight: 500;
+  letter-spacing: var(--tr-snug);
+  text-align: left;
+}
+
+.faq__row button b {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.faq__row svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.5s var(--ease);
+}
+
+.faq__row.is-open svg {
+  transform: rotate(180deg);
+}
+
+.faq__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    grid-template-rows 0.5s var(--ease),
+    opacity 0.4s var(--ease),
+    visibility 0s 0.5s;
+}
+
+.faq__row.is-open .faq__panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.faq__panel > div {
+  overflow: hidden;
+}
+
+.faq__panel p {
+  max-width: 62ch;
+  padding: 0 24px 24px;
+  color: var(--text-2);
+}

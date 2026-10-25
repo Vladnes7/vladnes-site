@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/demo/elan/fonts/prata-regular.ttf) format('truetype');
+}

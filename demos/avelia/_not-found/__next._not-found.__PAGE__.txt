@@ -1,0 +1,32 @@
+1:"$Sreact.fragment"
+2:"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js"
+3:"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js"
+4:"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js"
+5:I[79520,["$2","$3","$4"],""]
+6:I[4121,["$2","$3","$4"],"Shell"]
+7:I[39756,["$2","$3","$4"],"default"]
+8:I[37457,["$2","$3","$4"],"default"]
+9:I[38286,["$2","$3","$4"],"Button"]
+10:I[97367,["$2","$3","$4"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:"ViewportBoundary"
+15:I[97367,["$2","$3","$4"],"$14"]
+16:"MetadataBoundary"
+17:I[97367,["$2","$3","$4"],"$16"]
+18:I[27201,["$2","$3","$4"],"IconMark"]
+:HL["/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","style"]
+b:X
+e:X
+e:C
+f:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","section",null,{"className":"not-found","children":[["$","h1",null,{"children":["Этой страницы",["$","br",null,{}],"пока нет."]}],["$","p",null,{"children":"Вернёмся туда, где начинается знакомство."}],["$","$L9",null,{"href":"/","children":"На главную"}]]}],null,["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"p":"$@13","v":null,"s":"$b"}}]]
+c:[["children",{"s":"/_not-found","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@d","v":"$e","s":"$b"},"c":"$Qf"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","precedence":"next"}],["$","script","script-0",{"src":"/demo/avelia/_next/static/chunks/3u_zbt7fd-yp_.js","async":true}],["$","script","script-1",{"src":"/demo/avelia/_next/static/chunks/3mqe_4i1j5c6h.js","async":true}],["$","script","script-2",{"src":"/demo/avelia/_next/static/chunks/0n76of8lhb9gf.js","async":true}]],["$","html",null,{"lang":"ru","data-scroll-behavior":"smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","$L5",null,{"id":"avelia-theme-init","strategy":"beforeInteractive","dangerouslySetInnerHTML":{"__html":"try{document.documentElement.dataset.theme=localStorage.getItem('avelia-theme')||'light'}catch(e){}"}}]}],["$","body",null,{"className":"l506uG_variable xvXtTW_variable","children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"templateStyles":[],"templateScripts":null,"notFound":[["$","section",null,{"className":"not-found","children":[["$","h1",null,{"children":["Этой страницы",["$","br",null,{}],"пока нет."]}],["$","p",null,{"children":"Вернёмся туда, где начинается знакомство."}],["$","$L9",null,{"href":"/","children":"На главную"}]]}],[]]}]}]}]]}]]}],"p":"$@a","v":null,"s":"$b"},"c":"$Qc"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L15",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$11",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Avelia — современная стоматология в Москве"}],["$","meta","1",{"name":"description","content":"Вымышленная стоматологическая клиника в Москве. Диагностика, лечение, эстетика и запись на консультацию."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/demo/avelia/icon.svg?icon.2i3qep_bie84o.svg","sizes":"any","type":"image/svg+xml"}],["$","$L18","4",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@19","v":null,"s":"$b"}},"a":"$@1a","u":"$@1b","b":"D0D_SBsTE0eNxeU36Lbe8"}
+12:null
+b:300
+1b:true
+b:C
+1a:0
+d:"$undefined"
+a:"$undefined"
+19:"$undefined"
+13:"$undefined"

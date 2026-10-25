@@ -1,0 +1,20 @@
+{
+  "name": "vladnes-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 -p 4500",
+    "build": "next build",
+    "demos": "node scripts/sync-demos.mjs",
+    "preview": "python3 -m http.server 4500 --directory out",
+    "preview:local": "NEXT_PUBLIC_ARCHIPILA_URL=http://127.0.0.1:4604/ next build && node scripts/sync-demos.mjs && rm -rf out/demo && mkdir out/demo && cp -R demos/marea demos/daviddive out/demo/ && python3 -m http.server 4500 --directory out"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.2.0",
+    "@fontsource/lora": "^5.2.0",
+    "gsap": "^3.13.0",
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

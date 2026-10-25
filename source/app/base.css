@@ -1,0 +1,620 @@
+/* ---------- Токены ---------- */
+/* Шкалы размеров, отступов и скруглений собраны по образцу токенов Apple (шаг 4 px, десять ступеней шрифта).
+   Цвета и шрифты свои: чёрный фон, акцент #0099FF, Manrope и Lora. */
+:root {
+  --bg: #000;
+  --raised: #0b0b0c;
+  --surface: #141414;
+  --surface-2: #1a1a1b;
+  --text: #fff;
+  --text-2: #d8d8d8;
+  --muted: #9a9a9a;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-strong: rgba(255, 255, 255, 0.2);
+  --nav-bg: rgba(0, 0, 0, 0.72);
+  --accent: #0099ff;
+  --accent-light: #7acaff;
+  --accent-deep: #0068ad;
+  /* Второй цвет: тёплый янтарный для точечных акцентов. --tint — подложка выделенных блоков. */
+  --warm: #ffb057;
+  /* Третий цвет: бирюзовый, для блока «Кому подходит», поддержки и подсветки заявки. */
+  --teal: #2dd4bf;
+  --teal-deep: #0f5f58;
+  --tint: #070c15;
+  --on-solid: #000;
+  --solid: #fff;
+
+  --sans: "Manrope Variable", "Manrope", system-ui, sans-serif;
+  --serif: "Lora", Georgia, serif;
+
+  /* Размеры шрифта */
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: clamp(17px, 1.5vw, 19px);
+  --fs-21: 21px;
+  --fs-28: clamp(22px, 2.4vw, 28px);
+  --fs-40: clamp(28px, 3.4vw, 40px);
+  --fs-56: clamp(34px, 4.6vw, 56px);
+  --fs-80: clamp(38px, 6.4vw, 88px);
+  --fs-112: clamp(54px, 10vw, 128px);
+
+  /* Интерлиньяж: плотный на крупном, свободный на тексте */
+  --lh-flat: 1;
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.55;
+
+  /* Трекинг: чем крупнее текст, тем плотнее */
+  --tr-tight: -0.035em;
+  --tr-snug: -0.02em;
+  --tr-caps: 0.1em;
+
+  /* Отступы, шаг 4 px */
+  --s-4: 4px;
+  --s-8: 8px;
+  --s-12: 12px;
+  --s-16: 16px;
+  --s-24: 24px;
+  --s-32: 32px;
+  --s-48: 48px;
+  --s-64: 64px;
+  --pad: clamp(20px, 4vw, 32px);
+  --section: clamp(80px, 10vw, 136px);
+
+  /* Скругления */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --warm: #b45f06;
+  --teal: #0b7f74;
+  --teal-deep: #cdeee9;
+  --tint: #f0f4fa;
+  --bg: #fff;
+  --raised: #f7f7f8;
+  --surface: #f3f3f4;
+  --surface-2: #ececee;
+  --text: #000;
+  --text-2: #363636;
+  --muted: #5a5a5a;
+  --line: rgba(0, 0, 0, 0.1);
+  --line-strong: rgba(0, 0, 0, 0.2);
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --on-solid: #fff;
+  --solid: #000;
+  --accent: #0077cc;
+  --accent-light: #2f9be6;
+  color-scheme: light;
+}
+
+/* ---------- База ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: var(--fs-16);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: var(--r-sm);
+  background: var(--solid);
+  color: var(--on-solid);
+  transform: translateY(-200%);
+}
+
+.skip:focus {
+  transform: none;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1344px;
+  margin-inline: auto;
+  padding-inline: var(--pad);
+}
+
+/* ---------- Типографика ---------- */
+h1,
+h2 {
+  font-weight: 600;
+  letter-spacing: var(--tr-tight);
+  line-height: var(--lh-tight);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--fs-80);
+}
+
+h2 {
+  font-size: var(--fs-56);
+}
+
+h2.display {
+  font-size: var(--fs-112);
+  line-height: var(--lh-flat);
+  text-align: center;
+}
+
+h1 em,
+h2 em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: var(--fs-21);
+  font-weight: 600;
+  letter-spacing: var(--tr-snug);
+  line-height: var(--lh-snug);
+}
+
+.lead {
+  color: var(--text-2);
+  font-size: var(--fs-18);
+}
+
+/* Буквы после разбиения: без этого курсив обрезается справа. */
+[data-split] div {
+  will-change: transform;
+}
+
+/* До запуска анимаций блоки скрыты; страховка в layout снимает это через 3,5 с. */
+html.js-motion:not(.motion-ready) [data-split],
+html.js-motion:not(.motion-ready) [data-reveal] {
+  opacity: 0;
+}
+
+/* ---------- Кнопки ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  font-size: var(--fs-16);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  transition:
+    background-color 0.3s var(--ease),
+    border-color 0.3s var(--ease),
+    color 0.3s var(--ease),
+    box-shadow 0.4s var(--ease),
+    transform 0.12s var(--ease);
+}
+
+.btn:hover {
+  border-color: var(--text);
+}
+
+/* Отклик на нажатие мгновенный, не ждёт отпускания. */
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--solid {
+  background: var(--solid);
+  border-color: var(--solid);
+  color: var(--on-solid);
+}
+
+/* Главная кнопка при наведении заливается акцентным синим и подсвечивается. */
+.btn--solid:hover,
+.btn--accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn--solid:hover {
+  box-shadow: 0 8px 36px -8px var(--accent);
+}
+
+.btn--accent:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
+  color: #000;
+}
+
+/* Смена слова по буквам: под каждой буквой лежит её копия. При наведении буквы по очереди уезжают вверх,
+   копии встают на их место. */
+.swap {
+  display: inline-block;
+}
+
+.swap__row {
+  display: inline-flex;
+  overflow: hidden;
+  line-height: 1.4;
+  vertical-align: bottom;
+  white-space: pre;
+}
+
+.swap__c {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.52s var(--ease);
+  transition-delay: calc(var(--i) * 18ms);
+}
+
+.swap__c::after {
+  content: attr(data-c);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+@media (hover: hover) {
+  :is(a, button):hover > .swap .swap__c,
+  :is(a, button):focus-visible > .swap .swap__c {
+    transform: translateY(-100%);
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-12);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 var(--s-16);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--bg) 60%, transparent);
+  font-size: var(--fs-14);
+  font-weight: 600;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-8);
+}
+
+.chips li {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  color: var(--text-2);
+  font-size: var(--fs-14);
+}
+
+/* ---------- Бегущая рамка ---------- */
+/* Как у visuvate.com (их CSS разобран 2026-10-15): при наведении из нижнего правого угла по рамке
+   в обе стороны бегут два синих блика и встречаются в верхнем левом, цикл 2,8 с. Ширина блика растёт
+   с 0 до 24° за первые 10 % цикла, в конце цикла блики гаснут. Оба блика — два слоя одного фона. */
+@property --sa {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 135deg;
+}
+
+@property --sb {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 135deg;
+}
+
+@property --sw {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 24deg;
+}
+
+.beam {
+  position: relative;
+  isolation: isolate;
+}
+
+.beam::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: 2;
+  padding: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    conic-gradient(
+      from calc(var(--sa) - var(--sw)),
+      transparent 0deg,
+      var(--accent) calc(var(--sw) / 2),
+      var(--accent-light) var(--sw),
+      transparent calc(var(--sw) * 2),
+      transparent 360deg
+    ),
+    conic-gradient(
+      from calc(var(--sb) - var(--sw)),
+      transparent 0deg,
+      var(--accent) calc(var(--sw) / 2),
+      var(--accent-light) var(--sw),
+      transparent calc(var(--sw) * 2),
+      transparent 360deg
+    );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 60ms linear;
+}
+
+@keyframes beam-run {
+  0% {
+    --sa: 135deg;
+    --sb: 135deg;
+    --sw: 0deg;
+    opacity: 1;
+  }
+
+  10% {
+    --sw: 24deg;
+  }
+
+  86% {
+    --sa: -45deg;
+    --sb: 315deg;
+    --sw: 24deg;
+    opacity: 1;
+  }
+
+  100% {
+    --sa: -45deg;
+    --sb: 315deg;
+    --sw: 24deg;
+    opacity: 0;
+  }
+}
+
+@media (hover: hover) {
+  .beam:hover::after {
+    animation: beam-run 2.8s linear infinite;
+  }
+}
+
+.beam:focus-within::after {
+  animation: beam-run 2.8s linear infinite;
+}
+
+/* Точки при наведении (карточки услуг): сетка белых и синих точек проявляется кольцом от центра наружу
+   за 0,9 с, а по ней медленно идёт мерцание. Центр под значком остаётся чистым. */
+@property --rm {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 1%;
+}
+
+@property --rp {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 2%;
+}
+
+@property --rs {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --rf {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+.dots {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  overflow: hidden;
+  mask: radial-gradient(
+    115% 150% at 50% 50%,
+    #0000 0,
+    rgba(0, 0, 0, var(--rs)) var(--rm),
+    rgba(0, 0, 0, var(--rf)) var(--rp),
+    #0000 100%
+  );
+  transition:
+    --rm 0.9s var(--ease),
+    --rp 0.9s var(--ease),
+    --rs 0.9s var(--ease),
+    --rf 0.9s var(--ease);
+}
+
+/* Четыре слоя точек: в каждом своя четверть узора (public/art/dots-1…4.png). Вместе они дают тот же рисунок,
+   а по очереди вспыхивают и гаснут с разными периодами, поэтому точки мерцают. Полоса света (mask) плывёт по ним как раньше. */
+.dots i {
+  position: absolute;
+  inset: 0;
+  background: url("/art/dots-1.png") 0 0 / 252px 252px;
+  mask: linear-gradient(90deg, #000 0 8%, #0003 22%, #000 38%, #0005 55%, #000 70%, #0002 86%, #000 100%) 0 0 / 300% 100%
+    repeat-x;
+  opacity: 0;
+  animation:
+    dots-drift 13.3s linear infinite paused,
+    dots-twinkle 2.3s ease-in-out infinite paused;
+}
+
+.dots i:nth-child(2) {
+  background-image: url("/art/dots-2.png");
+  animation-duration: 13.3s, 3.1s;
+  animation-delay: -4s, -1.2s;
+}
+
+.dots i:nth-child(3) {
+  background-image: url("/art/dots-3.png");
+  animation-duration: 13.3s, 2.7s;
+  animation-delay: -8s, -2.1s;
+}
+
+.dots i:nth-child(4) {
+  background-image: url("/art/dots-4.png");
+  animation-duration: 13.3s, 3.7s;
+  animation-delay: -2s, -0.5s;
+}
+
+[data-theme="light"] .dots i {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+@keyframes dots-drift {
+  to {
+    mask-position: -60% 0;
+  }
+}
+
+/* Большую часть цикла точки горят, затем гаснут почти до нуля и снова вспыхивают. */
+@keyframes dots-twinkle {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  14%,
+  58% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 0.12;
+  }
+}
+
+@media (hover: hover) {
+  :hover > .dots {
+    --rm: 22.29%;
+    --rp: 46.81%;
+    --rs: 0.4;
+    --rf: 1;
+  }
+
+  :hover > .dots i {
+    animation-play-state: running;
+  }
+}
+
+/* ---------- Переход темы ---------- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+}

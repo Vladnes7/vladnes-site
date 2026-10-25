@@ -1,0 +1,6 @@
+:HL["/demo/avelia/_next/static/chunks/2jyusv8qph5ud.css","style"]
+:HL["/demo/avelia/_next/static/media/Manrope-s.p.3rjk17h6oms_8.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/demo/avelia/_next/static/media/Onest-s.p.0bvr_lyh6x35u.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":{"n":"slug","t":"c","k":"journal/first-visit","s":[]},"h":65632,"c":"$Q2"}]]
+0:{"b":"D0D_SBsTE0eNxeU36Lbe8","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

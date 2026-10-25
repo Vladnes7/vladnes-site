@@ -1,0 +1,127 @@
+:root { --marine:#2d6770; --leaf-light:#bbd8a6; --ease-chapter:cubic-bezier(.76,0,.18,1); }
+
+
+/* A translucent marine veil leaves half of the restaurant in view. */
+.shore-nav { padding:0; overflow:hidden; background:transparent; }
+.shore-nav[open] { display:block; animation:none; }
+.shore-nav::backdrop { background:#102a2540; backdrop-filter:none; }
+.nav-seascape { position:absolute; inset:0; background:var(--deep-sea); }
+.nav-seascape img { width:100%; height:100%; object-fit:cover; object-position:70% center; }
+.nav-seascape::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#102a2520,#102a2510 55%,#102a2560); }
+.nav-panel { position:relative; isolation:isolate; width:52%; height:100%; display:flex; flex-direction:column; padding:36px var(--gutter) 28px; background:#245963e8; backdrop-filter:blur(12px); overflow-y:auto; overscroll-behavior:contain; }
+.nav-monogram { position:absolute; z-index:-1; inset:17% -12% 0; overflow:clip; font:400 min(72vw,950px)/1 Pinyon,var(--display); opacity:.06; pointer-events:none; }
+.nav-panel-top { min-height:80px; padding-top:10px; }
+.shore-nav nav { flex:1; justify-content:center; gap:2px; padding-block:22px; }
+.shore-nav nav .nav-link { display:block; border:0; padding:4px 0; font:400 clamp(34px,min(4.5vw,6.5svh),74px)/1.08 var(--display); letter-spacing:-.035em; text-transform:uppercase; }
+.shore-nav .nav-link[aria-current="page"]>span { color:var(--leaf-light); font-style:normal; }
+.shore-nav .nav-baseline { display:flex; flex-direction:column; gap:14px; flex-shrink:0; font-size:9px; }
+.shore-nav .nav-baseline a { font:400 clamp(20px,2vw,30px)/1.2 var(--display); letter-spacing:0; min-height:44px; align-content:center; }
+.shore-nav .dialog-top { position:absolute; z-index:2; top:24px; left:56%; right:var(--gutter); padding:0; border:0; background:transparent; margin:0; pointer-events:none; }
+.shore-nav .brand-small,.shore-nav .close-button { pointer-events:auto; }
+.shore-nav .close-button { border:0; border-radius:0; font:200 56px/1 var(--body); }
+.menu-toggle span { transition:transform 240ms var(--ease-out); }
+.menu-toggle[aria-expanded="true"] span:first-child { transform:translateY(4px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] span:last-child { transform:translateY(-4px) rotate(-45deg); }
+
+/* Full-frame photography; vertical scroll supplies the horizontal journey. */
+.shore-gallery { background:var(--marine); color:var(--salt); }
+.shore-gallery-heading { padding-block:100px 78px; }
+.shore-gallery-heading h2 { font:400 clamp(48px,6.7vw,110px)/1.02 var(--display); letter-spacing:-.04em; margin:25px 0; }
+.shore-gallery-heading h2 em { font-weight:400; color:var(--shore); }
+.shore-gallery-heading p { font-size:13px; }
+.shore-stage { position:relative; }
+.shore-frame { position:relative; min-height:85svh; overflow:clip; background:var(--deep-sea); }
+.shore-frame>img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.shore-frame::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,#102a2510 25%,#102a2528 45%,#071d17c2); pointer-events:none; }
+.shore-frame-copy { position:relative; z-index:1; padding:0 var(--gutter) 105px; min-height:85svh; display:flex; flex-direction:column; justify-content:end; align-items:start; }
+.shore-frame h3 { font:400 clamp(48px,7.6vw,125px)/.98 var(--display); letter-spacing:-.04em; margin:25px 0 18px; }
+.shore-frame-copy p { font-size:14px; line-height:1.7; max-width:540px; margin-bottom:20px; }
+.shore-frame-copy .text-link { min-height:44px; }
+.shore-photo-nav { display:flex; position:absolute; z-index:2; bottom:28px; left:var(--gutter); right:var(--gutter); border-top:1px solid #f5f3e960; gap:clamp(20px,4vw,70px); }
+.shore-photo-nav button { min-height:48px; font:11px/1.4 var(--body); display:flex; align-items:center; gap:14px; color:var(--salt); border-top:2px solid transparent; margin-top:-1px; }
+.shore-photo-nav button[aria-pressed="true"] { border-color:var(--leaf-light); color:var(--leaf-light); }
+.shore-photo-note { margin:0; padding-block:23px; font-size:10px; line-height:1.7; }
+.shore-journey.is-horizontal .shore-stage { position:sticky; top:0; height:100svh; overflow:clip; }
+.is-horizontal .shore-track { display:flex; height:100%; }
+.is-horizontal .shore-frame { flex:0 0 100%; min-width:0; height:100%; min-height:0; }
+.is-horizontal .shore-frame-copy { height:100%; min-height:0; }
+
+/* The photo, not a moving layout column, opens towards the guest. */
+.dish-carousel .dish-rail { --dish-width:38vw; gap:24px; padding-inline:var(--gutter); }
+.dish-carousel .dish-slide { position:relative; padding:0; }
+.dish-carousel .dish-slide figure { position:relative; height:clamp(420px,69svh,730px); overflow:clip; clip-path:inset(2.5% 4%); transition:clip-path 600ms var(--ease-drawer); }
+.grand-enhanced .dish-slide figure.photo-pending { clip-path:inset(0 0 100% 0); }
+.dish-slide:nth-child(3n+2) figure { transition-delay:90ms; }
+.dish-slide:nth-child(3n+3) figure { transition-delay:180ms; }
+.dish-carousel .dish-slide figure>img { width:100%; height:100%; object-fit:cover; transform:scale(1.035); transition:transform 700ms var(--ease-drawer); }
+.dish-carousel .dish-slide figure::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 30%,#071d1780 68%,#071d17e0); pointer-events:none; }
+.dish-carousel .dish-slide figcaption { position:absolute; z-index:1; left:30px; right:30px; bottom:110px; color:var(--salt); }
+.dish-carousel .dish-slide figcaption h3 { font-size:clamp(28px,2.8vw,44px); line-height:1.05; margin-top:12px; }
+.dish-carousel .dish-slide-detail { position:absolute; z-index:2; left:30px; right:30px; bottom:30px; padding:0; color:var(--salt); display:block; opacity:1; font-size:12px; line-height:1.65; }
+.dish-carousel .dish-slide-detail p { max-width:440px; color:var(--salt); }
+.dish-carousel .dish-slide-detail span { display:block; font-size:11px; margin-top:8px; color:var(--shore); }
+.dish-carousel .dish-slide:focus-visible { outline:2px solid var(--marine); outline-offset:3px; }
+.dish-arrows button,.dish-detail-nav button,.gallery-controls button { width:auto; min-width:74px; min-height:44px; padding-inline:14px; border-radius:0; font-size:12px; }
+.plate-explore,.photo-open { width:auto; min-width:90px; padding-inline:13px; border-radius:0; font:11px/1 var(--body); }
+.ribbon-pause { width:68px; border-radius:0; font-size:11px; }
+.coastal-wordmark { transition:color 220ms ease,text-shadow 320ms ease; }
+@media (hover:hover) and (pointer:fine) {
+  .coastal-wordmark:hover { color:var(--leaf-light); text-shadow:0 0 35px #bbd8a645,0 0 90px #bbd8a61c; }
+  .dish-carousel .dish-slide-detail { opacity:0; transform:translateY(10px); transition:opacity 260ms ease,transform 500ms var(--ease-out); pointer-events:none; }
+  .dish-carousel .dish-slide figcaption { bottom:35px; transition:transform 500ms var(--ease-out); }
+  .dish-carousel .dish-slide:is(:hover,:focus-within) figure { clip-path:inset(0); transition-delay:0ms; }
+  .dish-carousel .dish-slide:is(:hover,:focus-within) figure>img { transform:scale(1); }
+  .dish-carousel .dish-slide:is(:hover,:focus-within) figcaption { transform:translateY(-85px); }
+  .dish-carousel .dish-slide:is(:hover,:focus-within) .dish-slide-detail { opacity:1; transform:none; }
+}
+@media (max-width:900px) {
+  .nav-panel { width:65%; padding-inline:30px; }
+  .shore-nav .dialog-top { left:70%; right:24px; }
+  .shore-nav .brand-small { display:none; }
+  .shore-nav .dialog-top { justify-content:end; }
+  .dish-carousel .dish-rail { --dish-width:62vw; }
+}
+@media (max-width:600px) {
+  .nav-panel { width:85%; padding:22px 24px 24px; }
+  .nav-panel-top { min-height:65px; padding-top:15px; font-size:8px; }
+  .shore-nav .dialog-top { left:auto; right:8px; top:16px; }
+  .shore-nav .close-button { min-width:44px; width:44px; font-size:40px; }
+  .shore-nav nav .nav-link { font-size:clamp(30px,8.5vw,42px); padding-block:6px; }
+  .shore-nav .nav-baseline { font-size:8px; gap:4px; }
+  .shore-gallery-heading { padding-block:65px 50px; }
+  .shore-frame>img { object-position:55% center; }
+  .shore-frame h3 { font-size:clamp(44px,12vw,64px); }
+  .shore-frame-copy { padding-bottom:108px; }
+  .shore-frame-copy p { font-size:12px; max-width:280px; }
+  .shore-photo-nav { gap:25px; bottom:20px; }
+  .shore-photo-nav button { gap:6px; font-size:10px; }
+  .shore-photo-nav button span { display:none; }
+  .dish-carousel .dish-rail { --dish-width:86vw; gap:14px; }
+  .dish-carousel .dish-slide figure { height:600px; max-height:85svh; clip-path:none; }
+  .dish-carousel .dish-slide figcaption,.dish-carousel .dish-slide-detail { left:22px; right:22px; }
+  .dish-carousel .dish-slide-detail { opacity:1; transform:none; }
+  .dish-carousel .dish-slide figcaption { bottom:110px; transform:none!important; }
+  .dish-navigation .dish-gesture { display:none; }
+  .dish-navigation { gap:16px; }
+  .dish-arrows button { min-width:64px; padding-inline:10px; }
+}
+@media (max-height:550px) and (min-width:601px) {
+  .nav-panel { padding-block:15px; }
+  .nav-panel-top { min-height:35px; }
+  .shore-nav nav { padding-block:8px; }
+  .shore-nav nav .nav-link { font-size:28px; padding-block:2px; }
+  .shore-nav .nav-baseline { gap:0; padding-top:10px; }
+  .shore-frame h3 { font-size:54px; margin:12px 0; }
+  .shore-frame-copy { padding-bottom:85px; }
+  .shore-frame-copy p { margin-bottom:6px; font-size:12px; }
+  .shore-photo-nav { bottom:10px; }
+}
+@media (prefers-reduced-transparency:reduce) { .nav-panel { background:var(--marine); backdrop-filter:none; } }
+@media (prefers-reduced-motion:reduce) {
+  ::view-transition-old(*),::view-transition-new(*),::view-transition-group(*),.page-enter { animation:none!important; }
+  .dish-carousel .dish-slide figure,.dish-carousel .dish-slide figure>img,.dish-carousel .dish-slide figcaption,.dish-carousel .dish-slide-detail,.coastal-wordmark { transition:none; }
+  .dish-carousel .dish-slide figure { clip-path:none; }
+  .dish-carousel .dish-slide-detail { opacity:1; transform:none; }
+  .dish-carousel .dish-slide figcaption { bottom:110px; transform:none!important; }
+  .shore-photo-nav { position:static; padding-inline:var(--gutter); }
+}

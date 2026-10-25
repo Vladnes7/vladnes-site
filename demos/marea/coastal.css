@@ -1,0 +1,117 @@
+@font-face { font-family: Pinyon; src:url('assets/pinyon-script.ttf') format('truetype'); font-weight:400; font-style:normal; font-display:swap; }
+:root { --deep-sea:#102a25; --shore:#d9dfc7; }
+
+.wide-editorial>figure, .private-evening>figure, .after-dark>figure { overflow:clip; }
+@supports (animation-timeline:view()) {
+  @media (prefers-reduced-motion:no-preference) {
+    .wide-editorial>figure>img, .private-evening>figure>img, .after-dark>figure>img {
+      animation:coastal-photo-breathe linear both;
+      animation-timeline:view();
+      animation-range:entry 0% cover 50%;
+    }
+  }
+}
+@keyframes coastal-photo-breathe { from { transform:scale(1.08); } to { transform:scale(1); } }
+
+/* The entire photograph and its typography share the same clipping plane. */
+.rhythm { background:var(--deep-sea); }
+.rhythm-frame { position:relative; }
+.rhythm.is-animated .rhythm-frame { position:absolute; inset:0; overflow:clip; transform-origin:50% 30%; }
+.rhythm.is-animated .rhythm-night .rhythm-photo { clip-path:none; }
+.rhythm.is-animated .rhythm-night .rhythm-copy { opacity:1; }
+.rhythm.is-animated .rhythm-night { clip-path:inset(0 100% 0 0); }
+.rhythm-copy { left:0; right:0; top:50%; bottom:auto; padding-inline:var(--gutter); text-align:center; transform:translateY(-50%); }
+.rhythm .rhythm-copy h2 { font:400 clamp(56px,9.8vw,166px)/.95 var(--display); letter-spacing:-.04em; max-width:none; margin:26px 0 24px; text-wrap:balance; }
+.rhythm-title { text-transform:uppercase; display:block; }
+.rhythm .rhythm-copy h2 em { display:block; font:italic 400 clamp(32px,4.4vw,76px)/1.05 var(--display); color:var(--shore); letter-spacing:-.035em; margin-top:10px; }
+.rhythm-copy p { max-width:620px; margin:0 auto 18px; font-size:14px; line-height:1.7; text-wrap:pretty; }
+.rhythm-copy .text-link { justify-content:center; margin-top:0; }
+.rhythm-shade { background:linear-gradient(180deg,#071d1724,#071d1766 45%,#071d1752 75%,#071d1780); }
+.rhythm-scroll { z-index:3; bottom:25px; color:var(--salt); }
+
+/* An original MAREA signature, with Aurelia's scale and editorial structure. */
+.marea-footer { position:relative; overflow:clip; background:var(--deep-sea); color:var(--salt); }
+.coastal-ribbon { display:flex; align-items:center; border-block:1px solid #d9dfc73d; background:var(--sea); }
+.coastal-ribbon-window { overflow:hidden; flex:1; padding-block:23px; }
+.coastal-ribbon-track { display:flex; width:max-content; animation:coastal-ribbon 38s linear infinite; }
+.coastal-ribbon-track>div { display:flex; align-items:center; flex-shrink:0; gap:50px; padding-right:50px; }
+.coastal-ribbon-track span { font:400 clamp(18px,2vw,26px)/1.2 var(--body); letter-spacing:.13em; white-space:nowrap; }
+.coastal-ribbon-track .ribbon-star { width:32px; height:32px; flex-shrink:0; color:var(--salt); }
+@keyframes coastal-ribbon { to { transform:translateX(-50%); } }
+.coastal-ribbon.is-paused .coastal-ribbon-track { animation-play-state:paused; }
+.ribbon-pause { flex-shrink:0; width:58px; height:58px; margin-right:16px; border:1px solid #d9dfc75c; background:transparent; color:var(--salt); border-radius:50%; font:16px/1 var(--body); }
+.ribbon-pause[hidden] { display:none; }
+.coastal-footer-grid { display:grid; grid-template-columns:1.6fr .8fr .85fr; gap:clamp(35px,6vw,110px); padding-block:90px 70px; }
+.coastal-invitation h2 { font:400 clamp(46px,4.7vw,76px)/1.02 var(--display); letter-spacing:-.03em; margin:28px 0; text-wrap:balance; }
+.coastal-invitation h2 em { font-weight:400; color:var(--shore); }
+.coastal-invitation>p { margin:0 0 28px; font:14px/1.9 var(--body); color:#d9dfc7; }
+.coastal-invitation .text-link { display:flex; justify-content:space-between; width:min(100%,330px); margin:0; padding-block:13px; border-bottom:1px solid #d9dfc75c; font-size:13px; }
+.coastal-invitation small { display:block; margin-top:13px; font:10px/1.6 var(--body); color:#d9dfc7; }
+.coastal-footer-nav .eyebrow { display:block; padding-bottom:28px; margin-bottom:18px; border-bottom:1px solid #d9dfc73d; white-space:nowrap; }
+.coastal-footer-nav>a { display:flex; align-items:center; justify-content:space-between; gap:14px; padding-block:10px; min-height:44px; font:400 clamp(23px,2.1vw,32px)/1.2 var(--display); }
+.coastal-footer-nav>a span { font:17px/1 var(--body); opacity:.65; }
+.coastal-footer-nav>a[aria-current] { color:var(--shore); font-style:italic; }
+.coastal-footer-nav>p { margin:25px 0 0; font:11px/1.8 var(--body); color:#d9dfc7; }
+.coastal-signature { padding:25px var(--gutter) 40px; }
+.coastal-signature-caption { display:flex; justify-content:space-between; font:9px/1 var(--body); letter-spacing:.2em; color:var(--shore); }
+.coastal-wordmark { position:relative; display:flex; justify-content:center; font:400 clamp(160px,29vw,480px)/1.22 Pinyon,var(--display); color:var(--shore); user-select:none; padding-block:18px 0; }
+.coastal-wordmark>span { display:inline-block; overflow:visible; padding:.12em .1em; margin:-.12em -.1em; }
+/* Pinyon's M has .308em of ink beyond its advance width. Give the moving
+   layer that space; negative margins keep the handwritten word connected. */
+.coastal-wordmark>span:first-child { padding-right:.36em; margin-right:-.36em; }
+.coastal-wordmark.letters-active>span { will-change:transform; }
+.coastal-wordmark-note { text-align:center; font:9px/1.5 var(--body); letter-spacing:.25em; color:var(--shore); margin-top:-10px; }
+.coastal-footer-bottom { display:flex; justify-content:space-between; align-items:center; gap:24px; border-top:1px solid #d9dfc73d; padding-block:22px; font:9px/1.8 var(--body); color:#d9dfc7; }
+.coastal-footer-bottom>a { display:inline-flex; align-items:center; min-height:44px; }
+.marea-footer a:focus-visible, .marea-footer button:focus-visible { outline:2px solid var(--shore); outline-offset:5px; }
+@media (hover:hover) and (pointer:fine) {
+  .coastal-ribbon:hover .coastal-ribbon-track { animation-play-state:paused; }
+  .coastal-footer-nav>a:hover, .coastal-footer-bottom>a:hover { color:var(--shore); text-decoration:underline; text-underline-offset:6px; }
+  .ribbon-pause:hover { background:#d9dfc718; }
+}
+@media (max-width:900px) {
+  .coastal-footer-grid { grid-template-columns:1.25fr 1fr; gap:48px 35px; padding-block:65px 50px; }
+  .coastal-invitation { grid-column:1/-1; }
+  .coastal-invitation h2 { font-size:64px; }
+  .coastal-signature { padding-top:15px; }
+  .coastal-footer-bottom { flex-wrap:wrap; gap:4px 25px; }
+}
+@media (max-width:600px) {
+  .rhythm .rhythm-copy h2 { font-size:clamp(36px,12.5vw,72px); margin-block:18px; }
+  .rhythm .rhythm-copy h2 em { font-size:clamp(28px,8vw,48px); line-height:1.05; }
+  .rhythm-copy p { font-size:12px; line-height:1.7; margin-bottom:12px; }
+  .rhythm-copy .eyebrow { font-size:8px; letter-spacing:.1em; }
+  .rhythm-copy .text-link { font-size:12px; }
+  .rhythm-scroll { font-size:7px; bottom:20px; letter-spacing:.08em; }
+  .rhythm-scroll>span { max-width:47%; }
+  .coastal-ribbon-window { padding-block:18px; }
+  .coastal-ribbon-track>div { gap:28px; padding-right:28px; }
+  .ribbon-pause { width:44px; height:44px; margin-right:8px; }
+  .coastal-footer-grid { gap:40px 24px; padding-block:50px 35px; }
+  .coastal-invitation h2 { font-size:clamp(45px,12vw,64px); margin-block:22px; }
+  .coastal-invitation>p { font-size:12px; }
+  .coastal-footer-nav .eyebrow { font-size:8px; letter-spacing:.1em; padding-bottom:18px; }
+  .coastal-footer-nav>a { font-size:23px; padding-block:8px; }
+  .coastal-footer-nav>p { font-size:10px; }
+  .coastal-signature { padding:10px 16px 30px; }
+  .coastal-signature-caption { font-size:7px; letter-spacing:.13em; }
+  .coastal-wordmark { font-size:29vw; padding-top:20px; }
+  .coastal-wordmark-note { font-size:7px; letter-spacing:.18em; margin-top:0; }
+  .coastal-footer-bottom { flex-direction:column; align-items:flex-start; font-size:8px; gap:7px; padding-block:20px 14px; }
+}
+@media (max-height:520px) and (orientation:landscape) {
+  .rhythm .rhythm-copy h2 { font-size:clamp(54px,10vh,80px); margin:12px 0; }
+  .rhythm .rhythm-copy h2 em { font-size:clamp(29px,7vh,42px); margin-top:0; }
+  .rhythm-copy p { font-size:10px; line-height:1.4; margin-bottom:0; }
+  .rhythm-copy .text-link { font-size:11px; min-height:32px; }
+  .rhythm-copy .eyebrow { font-size:8px; }
+  .rhythm-scroll { bottom:13px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .coastal-ribbon-track { animation:none; }
+  .coastal-ribbon-track>div:nth-child(2) { display:none; }
+  .coastal-ribbon-window { overflow-x:auto; }
+  .coastal-wordmark>span { transform:none!important; }
+  .page-enter { animation:none; }
+  ::view-transition-old(*), ::view-transition-new(*), ::view-transition-group(*) { animation:none!important; }
+}
