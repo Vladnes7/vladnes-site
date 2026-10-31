@@ -24,6 +24,7 @@ const sources = {
   elan: { from: join(github, "elan") },
   pinehaven: { from: join(github, "pinehaven") },
   "verde-auto": { from: join(github, "verde-auto") },
+  litora: { from: join(github, "litora") },
 };
 
 rmSync(target, { recursive: true, force: true });

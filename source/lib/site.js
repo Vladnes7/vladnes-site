@@ -105,6 +105,23 @@ export const works = [
     mobile: "/works/yalk-m.webp",
   },
   {
+    id: "litora",
+    title: "LITORA",
+    kind: "Сайт курортного отеля в Сочи",
+    client: "Курорт у моря",
+    about:
+      "Большой курорт: шесть категорий номеров, пять бассейнов, термальные пространства, три ресторана и пляж. Две языковые версии, летнее и зимнее настроение сайта и интерактивная карта территории.",
+    facts: ["52 страницы", "HTML, CSS, JS", "Лето и зима, RU и EN"],
+    href: "/demo/litora/",
+    linkLabel: "Открыть сайт",
+    industry: "Отели и курорты",
+    format: "Многостраничный",
+    pageCount: "52",
+    stack: "HTML, CSS, JS",
+    shots: [1, 2, 3, 4, 5].map((n) => `/works/litora-p${n}.webp`),
+    mobile: "/works/litora-m.webp",
+  },
+  {
     id: "pinehaven",
     title: "Pinehaven",
     kind: "Сайт лесного гольф-клуба",
